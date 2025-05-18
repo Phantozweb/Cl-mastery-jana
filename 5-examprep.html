@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Quick Recall Notes: Steps 34-40</title>
+    <style>
+        body {
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5; /* Lighter, softer background */
+            color: #333a45;
+        }
+        .main-container {
+            max-width: 950px;
+            margin: 25px auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .main-header {
+            background: linear-gradient(135deg, #009688 0%, #00695c 100%); /* Teal gradient for this block */
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            letter-spacing: 1px;
+        }
+        /* Phase title can be omitted if these steps don't neatly fit a new phase title distinct from the header */
+        .step-container {
+            padding: 20px 25px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        .step-container:last-child {
+            border-bottom: none;
+        }
+        .step-title {
+            font-size: 1.6em;
+            color: #00695c; /* Darker Teal */
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .step-section-title {
+            font-size: 1.1em;
+            color: #4A5568; /* Dark grey */
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            border-left: 4px solid #009688; /* Teal accent */
+            padding-left: 8px;
+        }
+        .keywords span {
+            display: inline-block;
+            background-color: #e0f2f1; /* Light teal for keywords */
+            color: #00695c; /* Darker teal text */
+            padding: 3px 8px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        ul, ol {
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        table.recall-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        .recall-table th, .recall-table td {
+            border: 1px solid #b2dfdb; /* Lighter teal border */
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .recall-table th {
+            background-color: #e0f2f1; /* Very light teal */
+            font-weight: bold;
+            color: #00695c; /* Darker Teal */
+        }
+        .layman-analogy, .mnemonic-box {
+            background-color: #fffadf; /* Light yellow */
+            border: 1px dashed #f0c000; /* Dashed yellow border */
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-style: italic;
+        }
+        .layman-analogy strong, .mnemonic-box strong {
+            font-style: normal;
+            color: #b8860b; /* Dark yellow */
+        }
+        .mini-summary {
+            background-color: #fce4ec; /* Light pink (contrast) */
+            border-left: 5px solid #E91E63; /* Pink */
+            padding: 12px;
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+        details.self-check-detailed {
+            background-color: #f0f4f8; /* Lighter blue/grey for self-check */
+            border: 1px solid #d3e0ea;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+        summary.self-check-summary-detailed {
+            font-weight: bold;
+            cursor: pointer;
+            color: #1976d2; /* Medium Blue for self-check summary */
+            padding: 5px 0;
+        }
+        details.self-check-detailed p {
+            font-weight: normal;
+            color: #333;
+            margin-top: 10px;
+        }
+        .confidence-rating {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #e8e8e8;
+            text-align: right;
+        }
+        .confidence-rating label {
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 0.9em;
+        }
+        .confidence-rating select {
+            padding: 6px 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .important-warning, .critical-point { /* Shared style for warnings */
+            background-color: #ffebee; /* Light red */
+            border-left: 5px solid #c62828; /* Dark Red */
+            padding: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .complication-box { /* For Steps 39, 40 */
+            border: 1px solid #d32f2f;
+            background-color: #ffebee;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .complication-box h4 {
+            margin-top: 0;
+            color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="main-header">
+        Detailed Quick Recall Notes: Contact Lens Steps 34-40
+    </div>
+
+    <!-- Step 34: Continuous Wear (CW) and Extended Wear (EW) Lenses -->
+    <div class="step-container">
+        <h2 class="step-title">Step 34: Continuous Wear (CW) and Extended Wear (EW) Lenses</h2>
+        <div class="keywords">
+            <span>Overnight Wear</span> <span>Extended Wear (EW)</span> <span>Continuous Wear (CW)</span> <span>High Dk/t SiHy</span> <span>Microbial Keratitis (MK) Risk</span> <span>Patient Selection</span> <span>Intensive Follow-up</span> <span>RSVP</span>
+        </div>
+        <div class="important-warning">
+            <strong>EW/CW = SIGNIFICANTLY HIGHER RISK of serious complications, especially Microbial Keratitis.</strong>
+        </div>
+        <h3 class="step-section-title">Definitions & Key Material Requirement:</h3>
+        <ul>
+            <li><span class="keywords"><span>Extended Wear (EW):</span></span> Overnight wear for up to 6 consecutive nights / 7 days.</li>
+            <li><span class="keywords"><span>Continuous Wear (CW):</span></span> Overnight wear for up to 30 consecutive nights / days.</li>
+            <li><strong>Material:</strong> <span class="keywords"><span>High Dk/t Silicone Hydrogels (SiHy) ONLY.</span></span> Essential to minimize corneal hypoxia during closed-eye conditions. Minimum Dk/t often cited: EW ~87, CW ~125 (Holden-Mertz criteria are for *no edema*, not necessarily *no complications*).</li>
+        </ul>
+        <h3 class="step-section-title">Critical Considerations:</h3>
+        <table class="recall-table">
+            <thead><tr><th>Factor</th><th>Details & Importance</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><strong>Patient Selection (VERY STRICT)</strong></td>
+                    <td>
+                        <ul>
+                            <li>Excellent ocular health (no DED, blepharitis, allergies).</li>
+                            <li>Proven excellent compliance with daily wear hygiene.</li>
+                            <li>Low-risk lifestyle/environment (non-smoker, not dusty/dirty job).</li>
+                            <li>Strong, valid need/desire for overnight wear.</li>
+                            <li>Full understanding and acceptance of increased risks (informed consent).</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Increased Risks</strong></td>
+                    <td><span class="keywords"><span>Microbial Keratitis (MK)</span></span> risk is several-fold higher than daily wear. Also increased risk of CLARE, infiltrates, GPC, hypoxic issues if Dk/t borderline or fit suboptimal.</td>
+                </tr>
+                <tr>
+                    <td><strong>Fitting</strong></td>
+                    <td>Optimal fit is crucial: must allow good tear exchange, not too tight.</td>
+                </tr>
+                <tr>
+                    <td><strong>Care Regimen (if reusable EW)</strong></td>
+                    <td>Lenses must be cleaned and disinfected upon removal if reinserted (even if worn for fewer than approved nights). No topping off.</td>
+                </tr>
+                <tr>
+                    <td><strong>Intensive Follow-up</strong></td>
+                    <td>Crucial, especially initially: e.g., next morning after first overnight wear, 1 week, 1 month, then every 3-6 months. Vigilant monitoring for early complications.</td>
+                </tr>
+                <tr>
+                    <td><strong style="color:red;">Patient Education (RSVP)</strong></td>
+                    <td>Instruct to <span class="keywords"><span>IMMEDIATELY REMOVE</span></span> lenses and contact ECP if any: <strong>R</strong>edness, <strong>S</strong>ensitivity to light, <strong>V</strong>ision change, <strong>P</strong>ain.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="layman-analogy">
+            <strong>Analogy - EW/CW Lenses like High-Altitude Mountaineering:</strong>
+            "Daily wear lenses are like hiking in local hills – generally safe with basic precautions. EW/CW lenses are like attempting Everest:
+            <ul>
+                <li>You need <span class="keywords"><span>specialized gear</span></span> (High Dk/t SiHy).</li>
+                <li>Only <span class="keywords"><span>extremely fit, experienced, and well-prepared climbers</span></span> (patients) should attempt it.</li>
+                <li>The <span class="keywords"><span>risks are much higher</span></span>, and bad things can happen quickly (MK).</li>
+                <li>You need <span class="keywords"><span>constant monitoring</span></span> and check-ins with your 'guide' (ECP)."</li>
+            </ul>
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> EW/CW offers convenience but demands extremely careful patient selection, the highest Dk/t SiHy lenses, impeccable (though reduced) hygiene if lenses are reused, and intensive monitoring due to significantly increased risks of serious complications like MK.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: A patient asks if they can just "nap for an hour or two" in their regular daily wear hydrogel lenses. What is your advice and why?</summary>
+            <p>The advice should generally be <span class="keywords"><span>NO, unless those specific lenses are FDA-approved for napping/overnight wear (which standard hydrogels rarely are)</span></span>.
+            <strong>Why:</strong> Even short naps with eyes closed in lenses not designed for it drastically reduce oxygen to the cornea (closed eye + lens barrier). Standard hydrogels typically have insufficient Dk/t for safe closed-eye wear. This increases the risk of acute hypoxia, corneal edema (Sattler's veil, spectacle blur upon waking), and potentially inflammatory events like CLARE, especially if the lens fit is also tight. It's better to remove lenses even for short naps unless they are specifically approved for extended wear and the patient is managed for it.</p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step34_conf_detailed">Confidence:</label>
+            <select id="step34_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- Step 35: Therapeutic Lenses / Bandage Contact Lenses (BCLs) -->
+    <div class="step-container">
+        <h2 class="step-title">Step 35: Therapeutic Lenses / Bandage Contact Lenses (BCLs)</h2>
+        <div class="keywords">
+            <span>Bandage Lens</span> <span>Pain Relief</span> <span>Corneal Healing</span> <span>Mechanical Protection</span> <span>High Dk/t SiHy</span> <span>Prophylactic Antibiotics</span> <span>Extended Wear</span>
+        </div>
+        <h3 class="step-section-title">Primary Goals & Indications:</h3>
+        <table class="recall-table">
+            <thead><tr><th>Goal of BCL Use</th><th>Common Clinical Indications</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><span class="keywords"><span>Pain Relief</span></span> (protects exposed corneal nerves from eyelid friction)</td>
+                    <td>Corneal abrasions, Recurrent Corneal Erosions (RCE), Bullous Keratopathy, Filamentary Keratitis.</td>
+                </tr>
+                <tr>
+                    <td><span class="keywords"><span>Promote Corneal Healing</span></span></td>
+                    <td>Provides moist environment, protects migrating epithelial cells. Used for abrasions, RCE, post-operative healing (PRK, CXL, small perforations).</td>
+                </tr>
+                <tr>
+                    <td><span class="keywords"><span>Mechanical Protection</span></span></td>
+                    <td>Shields cornea from external trauma, trichiasis (in-turned lashes), exposure keratopathy (incomplete lid closure).</td>
+                </tr>
+                <tr>
+                    <td>Maintain Corneal Hydration</td>
+                    <td>Severe dry eye (though sclerals often preferred), neurotrophic keratitis.</td>
+                </tr>
+                <tr>
+                    <td>(Potential) Drug Delivery</td>
+                    <td>Specialized lenses can act as reservoirs. Standard BCLs can prolong contact time of topical meds.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="step-section-title">Lens Selection & Fitting:</h3>
+        <ul>
+            <li><strong>Material: <span class="keywords"><span>High Dk/t Silicone Hydrogel (SiHy) soft lenses</span></span></strong> are strongly preferred to maximize oxygen to the already compromised cornea.</li>
+            <li><strong>Parameters:</strong>
+                <ul>
+                    <li>Often <span class="keywords"><span>larger diameter</span></span> for stability, full corneal coverage, and to extend onto sclera.</li>
+                    <li>Usually plano power, or low plus/minus if a refractive need also exists or for fit.</li>
+                    <li>BC chosen for good drape and adherence, but not too tight. May need steeper BC for irregular surfaces.</li>
+                </ul>
+            </li>
+            <li><strong>Fit:</strong> Should provide good coverage, be relatively immobile (to avoid dislodging or further irritating cornea), but not so tight as to restrict oxygen or trap significant debris/inflammatory cells. Slight movement is acceptable.</li>
+        </ul>
+        <h3 class="step-section-title">Management & Co-management:</h3>
+        <ul>
+            <li>BCLs are often worn on an <span class="keywords"><span>extended wear basis</span></span> (overnight) for continuous therapeutic effect.</li>
+            <li><span class="keywords"><span>Prophylactic topical antibiotics</span></span> are frequently prescribed concurrently to prevent secondary infection, as the BCL can create a favorable environment for microbial growth on a damaged cornea.</li>
+            <li>May also use: Topical NSAIDs (pain/inflammation), cycloplegics (pain/uveitis), artificial tears.</li>
+            <li><strong style="color:red;">Close monitoring is essential.</strong> Frequent follow-ups to assess healing, check for signs of infection (MK is a risk!), infiltrates, tight lens syndrome, or other complications.</li>
+        </ul>
+        <div class="layman-analogy">
+            <strong>Analogy - BCL like a High-Tech Medical Band-Aid for the Eye:</strong>
+            "A BCL is like a special, breathable, see-through Band-Aid placed directly on the eye's surface.
+            <ul>
+                <li>It <span class="keywords"><span>protects the 'wound'</span></span> (abrasion) from rubbing by the 'eyelid blanket.'</li>
+                <li>It <span class="keywords"><span>keeps the wound moist</span></span> to help it heal faster.</li>
+                <li>It <span class="keywords"><span>reduces pain</span></span> by covering sensitive 'nerve endings.'</li>
+                <li>Because it's on a vulnerable spot, the 'doctor' (ECP) often gives 'antibiotic cream' (drops) to use with it and checks it frequently."</li>
+            </ul>
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Bandage contact lenses are valuable tools for managing various corneal conditions by providing pain relief, promoting healing, and offering protection. High Dk SiHy materials are crucial, and co-management with prophylactic antibiotics is common due to the compromised ocular surface.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: A patient has a large, central corneal abrasion from a tree branch. After thorough irrigation and examination, why would a high Dk/t SiHy BCL be a good choice, and what else would you likely prescribe?</summary>
+            <p>A high Dk/t SiHy BCL would be a good choice to:
+            <ol>
+                <li>Provide significant <span class="keywords"><span>pain relief</span></span> by shielding the exposed corneal nerves.</li>
+                <li>Promote <span class="keywords"><span>epithelial healing</span></span> by maintaining a moist environment and protecting new cells.</li>
+                <li>Offer <span class="keywords"><span>mechanical protection</span></span> from eyelid blinking.</li>
+                <li>The high Dk/t ensures maximum oxygen to the healing cornea, which is vital for metabolic activity and reducing hypoxic stress.</li>
+            </ol>
+            You would also very likely prescribe <span class="keywords"><span>prophylactic topical broad-spectrum antibiotic drops</span></span> to prevent infection in the compromised cornea, and possibly a cycloplegic drop for pain/photophobia from associated iritis. Artificial tears (preservative-free) might also be recommended for lubrication over the BCL.
+            </p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step35_conf_detailed">Confidence:</label>
+            <select id="step35_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- Step 36: Contact Lens Fitting Following Ocular Surgeries -->
+    <div class="step-container">
+        <h2 class="step-title">Step 36: Contact Lens Fitting Following Ocular Surgeries</h2>
+        <div class="keywords">
+            <span>Post-Keratoplasty (PKP)</span> <span>Post-Refractive Surgery (LASIK, PRK)</span> <span>Irregular Astigmatism</span> <span>Ectasia</span> <span>RGP Lenses</span> <span>Scleral Lenses</span> <span>Reverse Geometry</span> <span>Oblate Cornea</span>
+        </div>
+        <h3 class="step-section-title">1. Post-Keratoplasty (Corneal Transplant - PKP, DALK, etc.):</h3>
+        <ul>
+            <li><strong>Common Challenges:</strong>
+                <ul>
+                    <li><span class="keywords"><span>High, Irregular Astigmatism:</span></span> Very common due to graft-host junction, suture tension, wound healing.</li>
+                    <li>Significant spherical refractive error (myopia, hyperopia).</li>
+                    <li>Graft stability, risk of rejection, suture-related issues (loose/broken sutures, neovascularization).</li>
+                    <li>Fragile graft epithelium, potential for surface disease.</li>
+                </ul>
+            </li>
+            <li><strong>Contact Lens Options (often the only way to achieve good VA):</strong>
+                <ul>
+                    <li><span class="keywords"><span>RGP Lenses:</span></span> First choice for irregular astigmatism. May require:
+                        <ul>
+                            <li><span class="keywords"><span>Large Diameter Designs:</span></span> For stability on large/irregular grafts.</li>
+                            <li><span class="keywords"><span>Reverse Geometry Curves:</span></span> Central BC flatter than peripheral curves, to align with flatter graft center and steeper graft periphery/host junction.</li>
+                            <li>Bitoric or specialized keratoconic-like designs.</li>
+                        </ul>
+                    </li>
+                    <li><span class="keywords"><span>Scleral Lenses:</span></span> Excellent option for highly irregular, unstable, or fragile grafts. They vault the entire cornea, resting on the sclera, providing a stable tear reservoir and smooth optical surface.</li>
+                    <li>Hybrid Lenses; Custom Soft Lenses (less common for significant irregularity).</li>
+                </ul>
+            </li>
+            <li><strong>Timing of Fit:</strong> Usually several months post-op, after significant suture removal (if applicable), when graft is stable and refraction has somewhat stabilized. <span class="keywords"><span>Corneal Topography is ESSENTIAL</span></span> for lens design.</li>
+        </ul>
+        <h3 class="step-section-title">2. Post-Refractive Surgery (e.g., LASIK, PRK, RK):</h3>
+        <ul>
+            <li><strong>Common Reasons for CL Fitting:</strong>
+                <ul>
+                    <li><span class="keywords"><span>Residual Refractive Error:</span></span> Under/overcorrection or induced astigmatism.</li>
+                    <li>Regression of surgical effect over time.</li>
+                    <li><span class="keywords"><span>Post-LASIK Ectasia:</span></span> Serious complication where cornea thins and bulges (KC-like).</li>
+                    <li>Anisometropia, presbyopia development, visual symptoms (glare/halos).</li>
+                </ul>
+            </li>
+            <li><strong>Altered Corneal Shape:</strong>
+                <ul>
+                    <li>Myopic LASIK/PRK → <span class="keywords"><span>Oblate Cornea</span></span> (flatter centrally, steeper peripherally).</li>
+                    <li>Hyperopic LASIK/PRK → Hyper-prolate/oblate cornea (steeper centrally, often with a "donut" or complex mid-peripheral shape).</li>
+                </ul>
+            </li>
+            <li><strong>Contact Lens Options:</strong>
+                <ul>
+                    <li><strong>Soft Lenses:</strong> Often suitable for simple, stable residual errors. Aspheric designs may help with SA from altered corneal shape.</li>
+                    <li><span class="keywords"><span>RGP Lenses:</span></span> Good for irregular astigmatism or ectasia. Often require <span class="keywords"><span>Reverse Geometry Designs</span></span> for oblate post-myopic LASIK corneas to achieve good centration and alignment (steeper peripheral curves fit under the steeper mid-periphery, flatter central curve aligns with flatter central cornea).</li>
+                    <li>Hybrid Lenses; Scleral Lenses (especially for ectasia or severe post-op dry eye).</li>
+                </ul>
+            </li>
+            <li><strong>Other Considerations:</strong> Post-refractive surgery <span class="keywords"><span>dry eye</span></span> is very common and must be managed. Flap considerations for LASIK (avoiding suction cups for RGP removal if flap is unstable).</li>
+        </ul>
+        <div class="layman-analogy">
+            <strong>Analogy - Post-Surgical Cornea like a Resurfaced Road:</strong>
+            "Sometimes after roadwork (eye surgery), the road isn't perfectly smooth or level.
+            <ul>
+                <li><strong>Post-Transplant (PKP):</strong> Like patching a big section of road – the edges might be uneven (<span class="keywords"><span>irregular astigmatism</span></span>). You need a 'heavy-duty RGP paver' or a 'Scleral bridge' to make it drivable.</li>
+                <li><strong>Post-LASIK (Oblate):</strong> Like they flattened the mountain peak too much, making the center flat and sides steep. A regular 'RGP skateboard' won't sit right; you need one with 'upturned edges' (<span class="keywords"><span>Reverse Geometry</span></span>) to fit the new shape."</li>
+            </ul>
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Fitting CLs after ocular surgery requires a deep understanding of the altered corneal topography and physiology. RGPs, Sclerals, and specialized designs (like reverse geometry) are often necessary to manage irregular astigmatism and achieve optimal vision. Topography is indispensable.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: A patient underwent myopic LASIK and now has an oblate corneal profile. If an RGP lens is needed, why is a standard RGP design with progressively flatter peripheral curves often unsuitable?</summary>
+            <p>A standard RGP design has a central base curve and progressively flatter peripheral curves, designed for a normal prolate cornea (steeper centrally, flatter peripherally). On an <span class="keywords"><span>oblate cornea</span></span> (flatter centrally, steeper mid-peripherally after myopic LASIK), such a standard RGP would:
+            <ol>
+                <li>Likely fit very flat centrally (apical bearing/touch).</li>
+                <li>Have its flatter peripheral curves "dig into" or excessively bear on the now steeper mid-peripheral cornea, causing discomfort, poor centration (often riding high), and inadequate tear exchange.</li>
+            </ol>
+            A <span class="keywords"><span>reverse geometry RGP design</span></span> (steeper peripheral curves, flatter central curve) is needed to better align with the oblate shape.
+            </p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step36_conf_detailed">Confidence:</label>
+            <select id="step36_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- Step 37: Disposable Contact Lenses -->
+    <div class="step-container">
+        <h2 class="step-title">Step 37: Disposable Contact Lenses</h2>
+        <div class="keywords">
+            <span>Daily Disposable (DD)</span> <span>Single Use</span> <span>Hygiene</span> <span>Convenience</span> <span>Reduced Complications</span> <span>Allergies</span> <span>Occasional Wear</span>
+        </div>
+        <h3 class="step-section-title">Definition & Primary Type:</h3>
+        <ul>
+            <li>Lenses intended to be discarded after a specific period, with <span class="keywords"><span>Daily Disposable (DD)</span></span> or <span class="keywords"><span>Single Use</span></span> lenses being the most common and beneficial in this category.</li>
+            <li><strong>Daily Disposable (DD):</strong> Worn for one day only and then discarded. A fresh, sterile lens is used each day of wear.</li>
+        </ul>
+        <h3 class="step-section-title">Key Benefits of Daily Disposable Lenses:</h3>
+        <table class="recall-table">
+            <thead><tr><th>Benefit</th><th>Explanation</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><strong style="color:green;">Superior Hygiene & Safety</strong></td>
+                    <td>Eliminates risks associated with lens cleaning, disinfection, and contaminated lens cases. Each lens is sterile out of the pack. Significantly reduces risk of infections and inflammatory events.</td>
+                </tr>
+                <tr>
+                    <td><strong style="color:green;">Ultimate Convenience</strong></td>
+                    <td>No solutions, no cleaning, no lens cases needed (except for carrying a spare pair). Ideal for busy lifestyles, travel.</td>
+                </tr>
+                <tr>
+                    <td><strong style="color:green;">Reduced Deposit-Related Issues</strong></td>
+                    <td>Lens is discarded before significant protein/lipid deposits can accumulate. Lower risk of GPC, discomfort from deposits.</td>
+                </tr>
+                <tr>
+                    <td><strong style="color:green;">Reduced Solution Sensitivity/Allergy</strong></td>
+                    <td>No exposure to lens care solution preservatives or components. Ideal for patients with known sensitivities.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ideal for Occasional Wear</strong></td>
+                    <td>Cost-effective and hygienic for patients who only wear CLs part-time (e.g., sports, social events).</td>
+                </tr>
+                <tr>
+                    <td><strong>Comfort</strong></td>
+                    <td>A fresh, clean lens surface every day can contribute to better comfort for many wearers. Materials are often designed for good initial comfort.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="step-section-title">Ideal Patient Candidates for Daily Disposables:</h3>
+        <ul>
+            <li>New wearers (simplicity, good habits).</li>
+            <li>Children and teenagers (hygiene, compliance).</li>
+            <li>Patients with history of solution sensitivities, allergies, or GPC.</li>
+            <li>Patients prone to heavy deposits.</li>
+            <li>Occasional/part-time wearers.</li>
+            <li>Those seeking maximum convenience or hygiene.</li>
+            <li>Patients non-compliant with reusable lens care.</li>
+        </ul>
+        <div class="layman-analogy">
+            <strong>Analogy - Daily Disposables like Disposable Toothbrushes when Traveling:</strong>
+            "Imagine using a brand new, clean toothbrush every single time you brush your teeth, then throwing it away. That's like Daily Disposable contact lenses. There's no need to worry about cleaning the toothbrush (lens), storing it in a special case, or using cleaning pastes (solutions). It's always fresh and hygienic, reducing the chance of 'germs' (infections)."
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Daily disposable lenses offer the highest level of convenience and hygiene, significantly reducing risks of many CL complications. They are an excellent option for a wide range of patients, especially those prioritizing health, simplicity, or who wear lenses occasionally.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: A patient who travels frequently for work and has a history of GPC with monthly lenses is looking for a better CL option. What modality would be a strong recommendation and why?</summary>
+            <p><span class="keywords"><span>Daily Disposable (DD) lenses</span></span> would be a very strong recommendation.
+            <strong>Why:</strong>
+            <ol>
+                <li><strong>Travel Convenience:</strong> No need to carry solutions or lens cases (just spare lenses).</li>
+                <li><strong>GPC Management:</strong> By discarding the lens daily, protein and other deposits (which trigger GPC) do not have a chance to build up on the lens surface. This is often very effective in managing or preventing GPC recurrence.</li>
+                <li><strong>Hygiene:</strong> Reduces risk of contamination associated with travel and variable water quality for hand washing (though hand washing is still essential).</li>
+            </ol>
+            </p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step37_conf_detailed">Confidence:</label>
+            <select id="step37_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- Step 38: Frequent Replacement (FR) Lenses -->
+    <div class="step-container">
+        <h2 class="step-title">Step 38: Frequent Replacement (FR) Lenses</h2>
+        <div class="keywords">
+            <span>Planned Replacement</span> <span>2-Weekly</span> <span>Monthly</span> <span>Reduced Deposits</span> <span>Lens Performance</span> <span>Care System Required</span>
+        </div>
+        <h3 class="step-section-title">Definition & Modalities:</h3>
+        <ul>
+            <li>Lenses replaced on a <span class="keywords"><span>planned, regular schedule</span></span>, more frequently than "conventional" lenses (which were traditionally replaced annually or semi-annually).</li>
+            <li>Common FR Modalities (for soft lenses, primarily):
+                <ul>
+                    <li><span class="keywords"><span>2-Weekly Replacement:</span></span> Discarded after up to 14 days of wear.</li>
+                    <li><span class="keywords"><span>Monthly Replacement:</span></span> Discarded after up to 30 days of wear.</li>
+                    <li>(Less common now: Quarterly replacement for some specialized or conventional lenses).</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 class="step-section-title">Benefits of Frequent Replacement (vs. Conventional Long-Term Wear):</h3>
+        <table class="recall-table">
+            <thead><tr><th>Benefit</th><th>Explanation</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><strong>Reduced Accumulation of Deposits</strong></td>
+                    <td>Regular replacement minimizes long-term buildup of proteins, lipids, mucin, and microbes on the lens surface.</td>
+                </tr>
+                <tr>
+                    <td><strong>Improved Lens Performance Over Time</strong></td>
+                    <td>Fresher lens surface maintains better wettability, optical clarity, and comfort throughout the intended wear cycle.</td>
+                </tr>
+                <tr>
+                    <td><strong>Enhanced Ocular Health & Safety</strong></td>
+                    <td>Lower risk of deposit-related complications (e.g., GPC, sterile infiltrates) and potentially infections compared to very extended replacement schedules.</td>
+                </tr>
+                <tr>
+                    <td><strong>Patient Compliance with Replacement</strong></td>
+                    <td>A defined, shorter schedule is often easier for patients to remember and adhere to compared to vague annual replacements.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="step-section-title">Key Considerations:</h3>
+        <ul>
+            <li><span class="keywords"><span>Full Lens Care Regimen Required:</span></span> Unlike daily disposables, FR lenses are reused daily within their replacement cycle and therefore <span class="keywords"><span>MUST</span></span> be cleaned, rinsed, and disinfected with appropriate solutions and stored in a clean lens case every night.</li>
+            <li>Available in a wide range of materials (Hydrogel, SiHy) and designs (spherical, toric, multifocal).</li>
+            <li>Represents a good balance of ocular health benefits, convenience (compared to very frequent care of conventional lenses), and often cost-effectiveness for full-time wearers compared to daily disposables.</li>
+        </ul>
+        <div class="layman-analogy">
+            <strong>Analogy - Frequent Replacement Lenses like Changing Your Kitchen Sponge Regularly:</strong>
+            "Using an old 'conventional' lens for a year is like using the same kitchen sponge for months – it gets grimy, full of bacteria, and doesn't work well (<span class="keywords"><span>deposits, risk</span></span>). <span class="keywords"><span>Frequent Replacement Lenses</span></span> (2-weekly or monthly) are like getting a new sponge every few weeks. It stays cleaner, works better, and is much more hygienic. You still have to wash it daily (lens care), but you're not letting it get super old and gross."
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Frequent replacement lenses (2-weekly, monthly) offer a significant improvement in hygiene, lens performance, and ocular health compared to older conventional wear schedules, by limiting long-term deposit accumulation. However, they still necessitate diligent daily care and compliance.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: A patient is currently wearing "conventional" soft lenses replaced annually and experiences end-of-day discomfort and hazy vision towards the end of the lens life. What lens replacement modality would likely offer them significant benefits?</summary>
+            <p>Switching to a <span class="keywords"><span>Frequent Replacement (FR) modality</span></span>, such as monthly or 2-weekly replacement lenses, would likely offer significant benefits. This would reduce the long-term accumulation of deposits on the lens surface, which is a common cause of end-of-day discomfort and hazy vision with conventionally replaced lenses. A fresher lens surface would improve wettability and optical clarity. Daily disposables would be an even better option if deposit-related issues are severe or compliance with care is a concern.</p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step38_conf_detailed">Confidence:</label>
+            <select id="step38_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- Step 39: Complications of Contact Lenses – Part 1 (Inflammatory & Allergic) -->
+    <div class="step-container">
+        <h2 class="step-title">Step 39: Complications of Contact Lenses – Part 1 (Inflammatory & Allergic)</h2>
+        <div class="keywords">
+            <span>GPC (CLPC)</span> <span>CLARE</span> <span>Sterile Infiltrates (IK)</span> <span>CLPU</span> <span>Inflammation</span> <span>Allergy</span> <span>Deposits</span> <span>Toxins</span> <span>RSVP</span>
+        </div>
+        <div class="mnemonic-box">
+            <strong>Patient Symptom Alert: RSVP!</strong> If patient reports: <strong>R</strong>edness, <strong>S</strong>ensitivity (to light), <strong>V</strong>ision change, <strong>P</strong>ain → Lenses out, see ECP ASAP!
+        </div>
+        <h3 class="step-section-title">Common Inflammatory/Allergic Complications:</h3>
+        <p>(These are primarily immune/inflammatory responses, not active infections, though bacterial toxins can be triggers.)</p>
+        <table class="recall-table">
+            <thead><tr><th>Condition</th><th>Key Signs & Symptoms</th><th>Primary Causes</th><th>Basic Management Approach</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><strong>Giant Papillary Conjunctivitis (GPC) / CLPC</strong></td>
+                    <td>Itching (esp. after lens removal), mucous discharge, lens intolerance/movement, blurred VA. <span class="keywords"><span>Large papillae (>0.3mm)</span></span> on upper tarsal conjunctiva (lid eversion needed).</td>
+                    <td>Allergic/inflammatory reaction to denatured protein deposits on lens; mechanical irritation from lens edge/deposits; solution components.</td>
+                    <td>Discontinue CLs temporarily, switch to frequent replacement (DDs ideal), change material/design, mast cell stabilizers/antihistamines, short-course steroids if severe, improve hygiene.</td>
+                </tr>
+                <tr>
+                    <td><strong>Contact Lens Acute Red Eye (CLARE)</strong></td>
+                    <td>Acute unilateral red eye (often on waking after ON wear), mild pain/discomfort, photophobia, tearing. Corneal infiltrates may be present; usually no significant epithelial defect.</td>
+                    <td>Inflammatory reaction to bacterial endotoxins trapped under a (often tight-fitting or EW) lens. Hypoxia can contribute.</td>
+                    <td>Discontinue CLs. Usually resolves spontaneously. Refit with looser/higher Dk/t lens. Consider prophylactic antibiotic if infiltrates significant. Educate on EW risks.</td>
+                </tr>
+                <tr>
+                    <td><strong>Infiltrative Keratitis (IK) / Sterile Infiltrates</strong></td>
+                    <td>Focal whitish opacity (WBCs) in anterior stroma (often peripheral/mid-peripheral). Overlying epithelium usually <span class="keywords"><span>intact</span></span> (no/minimal staining). Mild-moderate pain, redness, photophobia.</td>
+                    <td>Inflammatory response to bacterial toxins, lens deposits, solution sensitivity, tight lens, hypoxia, poor hygiene. <span style="color:red;">Key: Differentiate from MK.</span></td>
+                    <td>Discontinue CLs. Topical antibiotics often given prophylactically/if unsure. Cautious topical steroids once infection ruled out. Address underlying cause.</td>
+                </tr>
+                <tr>
+                    <td><strong>Contact Lens Peripheral Ulcer (CLPU) / Sterile Peripheral Ulcer</strong></td>
+                    <td>Small (<2mm), round, peripheral corneal infiltrate <span class="keywords"><span>WITH</span></span> an overlying epithelial defect (stains with NaFl). Moderate pain, redness, photophobia.</td>
+                    <td>Hypersensitivity/inflammatory reaction to bacterial (often Staph) exotoxins, often linked to blepharitis or contaminated lens.</td>
+                    <td>Discontinue CLs. Often treated with topical antibiotics (prevent secondary infection, cover early MK). Manage blepharitis. Usually self-limiting; peripheral scar common.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="layman-analogy">
+            <strong>Analogy - Inflammatory Reactions like an Overzealous Security System:</strong>
+            "Your eye's 'security system' (immune response) can sometimes overreact:
+            <ul>
+                <li><strong>GPC:</strong> Like developing an allergy to the 'dust bunnies' (deposits) on your old CLs, making your inner eyelid 'rough and bumpy.'</li>
+                <li><strong>CLARE:</strong> Waking up with a red, angry eye because 'bacterial fumes' (toxins) got trapped under your 'overnight face mask' (lens).</li>
+                <li><strong>Sterile Infiltrates:</strong> 'Security guards' (WBCs) rushing to a spot where they *think* there's a problem (due to toxins/irritation), even if there's no actual 'burglar' (infection).</li>
+                <li><strong>CLPU:</strong> A small 'pothole' (ulcer) forms at the edge of the 'road' (cornea) due to a strong reaction to nearby 'bacterial litter.'</li>
+            </ul>
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Inflammatory/allergic CL complications are common and are primarily the body's response to stimuli like deposits, toxins, or mechanical irritation. Management involves removing the trigger, reducing inflammation, and addressing underlying causes. Differentiating sterile from infectious processes is key.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: A patient presents with a single, small, peripheral white spot on the cornea with intact epithelium above it and mild discomfort. What is this most likely to be, and how does it differ from Microbial Keratitis?</summary>
+            <p>This is most likely a <span class="keywords"><span>Sterile Infiltrate (Infiltrative Keratitis - IK)</span></span>.
+            It differs from Microbial Keratitis (MK) in several key ways:
+            <ol>
+                <li><strong>Epithelial Defect:</strong> Sterile infiltrates usually have an intact or minimally stained overlying epithelium, whereas MK typically has a significant epithelial defect (ulceration) that stains brightly with fluorescein.</li>
+                <li><strong>Pain:</strong> Pain with sterile infiltrates is usually mild to moderate, while MK often causes severe pain.</li>
+                <li><strong>Location/Size:</strong> Sterile infiltrates are often smaller, more peripheral, and may be multiple. MK can be central or peripheral, often larger and can progress rapidly.</li>
+                <li><strong>Discharge:</strong> Significant purulent discharge is more characteristic of MK.</li>
+                <li><strong>Anterior Chamber Reaction:</strong> A significant AC reaction (cells/flare, hypopyon) is more common and severe in MK.</li>
+            </ol>
+            However, early MK can sometimes mimic a sterile infiltrate, so caution and often prophylactic antibiotics are used if there's any doubt.
+            </p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step39_conf_detailed">Confidence:</label>
+            <select id="step39_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- Step 40: Complications of Contact Lenses – Part 2 (Infectious & Hypoxic) -->
+    <div class="step-container">
+        <h2 class="step-title">Step 40: Complications of Contact Lenses – Part 2 (Infectious & Hypoxic)</h2>
+        <div class="keywords">
+            <span>Microbial Keratitis (MK)</span> <span>Corneal Ulcer</span> <span>Pseudomonas</span> <span>Acanthamoeba</span> <span>Hypoxia</span> <span>Neovascularization (NV)</span> <span>Corneal Edema</span> <span>Corneal Warpage</span>
+        </div>
+        <div class="critical-point" style="text-align:center; font-size: 1.2em;">
+            MICROBIAL KERATITIS (MK) IS A SIGHT-THREATENING EMERGENCY!
+        </div>
+        <h3 class="step-section-title">Infectious Complications:</h3>
+        <div class="complication-box">
+            <h4><span class="keywords"><span>Microbial Keratitis (MK) / Infective Corneal Ulcer</span></span></h4>
+            <ul>
+                <li><strong>Signs & Symptoms:</strong> <strong style="color:red;">Severe pain</strong> (often out of proportion), significant redness (ciliary flush), marked vision decrease, photophobia, purulent discharge. Corneal infiltrate with an overlying <span class="keywords"><span>epithelial defect/ulcer</span></span> (stains with NaFl). Anterior chamber reaction (cells, flare, hypopyon) common.</li>
+                <li><strong>Major Risk Factors:</strong> <span class="keywords"><span>Overnight wear (highest!)</span></span>, poor hygiene (case care, solution misuse, topping off), tap water exposure, smoking, extended wear beyond schedule, trauma with CL.</li>
+                <li><strong>Common Pathogens:</strong>
+                    <ul>
+                        <li><span class="keywords"><span>Pseudomonas aeruginosa:</span></span> Aggressive, rapid progression, common in soft CL wearers, produces greenish discharge, ring infiltrate.</li>
+                        <li>Staphylococcus, Streptococcus species.</li>
+                        <li>Fungi (Fusarium, Aspergillus): Often after trauma with vegetative matter, slower onset, feathery infiltrates, satellite lesions.</li>
+                        <li><span class="keywords"><span>Acanthamoeba:</span></span> Protozoan. Associated with <span class="keywords"><span>tap water exposure</span></span> (showering/swimming in CLs, homemade saline). <strong style="color:red;">Severe pain disproportionate to signs</strong> is a hallmark. Ring infiltrate (late). Difficult to treat.</li>
+                    </ul>
+                </li>
+                <li><strong>Management:</strong> <span class="keywords"><span>IMMEDIATE CL DISCONTINUATION. URGENT REFERRAL</span></span> to ophthalmologist/corneal specialist. Corneal scrape for cultures/sensitivities. Intensive topical fortified antibiotics (often hourly). Cycloplegics. Possible hospital admission. High risk of permanent scarring & vision loss.</li>
+            </ul>
+        </div>
+        <h3 class="step-section-title">Hypoxic Complications:</h3>
+        <table class="recall-table">
+            <thead><tr><th>Condition</th><th>Signs & Symptoms</th><th>Primary Cause(s)</th><th>Management</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><strong>Corneal Neovascularization (NV)</strong></td>
+                    <td>Growth of new blood vessels from limbus into normally avascular cornea (superficial/deep). Usually asymptomatic until advanced or lipid keratopathy occurs.</td>
+                    <td>Chronic corneal <span class="keywords"><span>hypoxia</span></span> (low Dk/t lenses, tight fit, overwear). Chronic inflammation.</td>
+                    <td>Improve O2 supply (refit higher Dk/t SiHy, looser fit, reduce wear time). Treat inflammation. Discontinue CLs if severe/progressive.</td>
+                </tr>
+                <tr>
+                    <td><strong>Corneal Edema</strong> (Stromal, Epithelial Microcysts)</td>
+                    <td>Hazy/cloudy cornea, Sattler's veil (halos), spectacle blur post-removal. Slit lamp: Stromal haze, vertical <span class="keywords"><span>striae</span></span>, endothelial folds, epithelial <span class="keywords"><span>microcysts</span></span> (small refractile dots - chronic hypoxia).</td>
+                    <td><span class="keywords"><span>Hypoxia</span></span> (most common CL cause). Endothelial dysfunction. Inflammation.</td>
+                    <td>Improve O2 (higher Dk/t SiHy, looser fit, reduce wear time). Address underlying cause.</td>
+                </tr>
+                <tr>
+                    <td><strong>Corneal Warpage / CL-Induced Distortion</strong></td>
+                    <td>Changes in corneal curvature (seen on topography/K's), spectacle blur (VA better with CLs than new glasses), refractive error shifts. Distorted mires.</td>
+                    <td>Long-term wear of poorly fitting RGPs (esp. flat PMMA/low Dk) or sometimes tight soft lenses, leading to corneal molding.</td>
+                    <td>Discontinue CL wear for period (weeks/months for cornea to stabilize). Refit with better lens once stable. Topography essential.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="layman-analogy">
+            <strong>Analogy - MK like a Severe House Fire, Hypoxia like Slow Suffocation:</strong>
+            <ul>
+                <li><span class="keywords"><span>Microbial Keratitis (MK):</span></span> "This is a raging fire on your eye's 'front window.' It's incredibly painful, spreads fast, and can destroy the window (cause blindness) if not put out by the 'fire department' (ophthalmologist with strong antibiotics) immediately."</li>
+                <li><span class="keywords"><span>Chronic Hypoxia:</span></span> "This is like the 'window' not getting enough fresh air for a long time. It starts to get 'foggy' (<span class="keywords"><span>edema</span></span>), 'weeds' (<span class="keywords"><span>neovascularization</span></span>) start growing onto it, and the 'window frame' (<span class="keywords"><span>cornea</span></span>) can slowly change shape (<span class="keywords"><span>warpage</span></span>)."</li>
+            </ul>
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Microbial Keratitis is the most feared CL complication and requires immediate, aggressive management. Chronic hypoxia from inappropriate lens choice or wear can lead to significant long-term corneal changes like neovascularization and edema. Prevention through education and appropriate fitting is key.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: A patient who admits to swimming in their monthly soft lenses presents with extreme eye pain, photophobia, and a hazy cornea with a central opacity. What is your top differential diagnosis and immediate action?</summary>
+            <p>Top differential diagnosis, given the history of swimming in lenses and severe pain, is <span class="keywords"><span>Acanthamoeba Keratitis</span></span>, although a severe bacterial keratitis (like Pseudomonas) is also highly possible.
+            <br><strong>Immediate Action:</strong>
+            <ol>
+                <li>Instruct the patient to <span class="keywords"><span>REMOVE contact lenses IMMEDIATELY</span></span> (if still in).</li>
+                <li>Do NOT attempt to refit or manage.</li>
+                <li>Arrange for an <span class="keywords"><span>URGENT/EMERGENT referral to an ophthalmologist</span></span> (preferably a corneal specialist) for corneal scraping, cultures, and initiation of intensive antimicrobial therapy. Document the history of water exposure clearly in the referral.</li>
+            </ol>
+            </p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step40_conf_detailed">Confidence:</label>
+            <select id="step40_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+</div> <!-- End Main Container -->
+
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5: Fitting Spherical Soft & RGP Lenses</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .cornell-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .cornell-header {
+            background-color: #4CAF50; /* Green (back to green for fitting!) */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .cornell-main {
+            display: flex;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+        .cornell-cues {
+            flex: 1;
+            padding: 15px;
+            border-right: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        .cornell-notes {
+            flex: 3;
+            padding: 15px;
+        }
+        .cornell-summary {
+            padding: 15px;
+            border-top: 2px solid #4CAF50;
+            background-color: #e8f5e9; /* Light green */
+            margin-top: 0;
+        }
+        h1, h2, h3 {
+            color: #2e7d32; /* Darker Green */
+        }
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #388e3c; /* Medium Green */
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #c8e6c9; /* Lighter green */
+        }
+        ul, ol {
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        .mnemonic {
+            background-color: #fffacd;
+            border-left: 5px solid #ffd700;
+            padding: 10px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .analogy {
+            background-color: #e0f7fa;
+            border-left: 5px solid #00bcd4;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .key-term {
+            font-weight: bold;
+            color: #c62828; /* Dark Red */
+        }
+        .cl-relevance {
+            background-color: #ffebee;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        details {
+            background-color: #f1f8e9; /* Very light green */
+            border: 1px solid #dcedc8; /* Lighter green border */
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            color: #1b5e20; /* Very dark green */
+        }
+        .study-tip {
+            background-color: #fff9c4;
+            border: 1px solid #fff176;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+        .important-concept {
+            background-color: #ffecb3;
+            border-left: 5px solid #ff9800;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .fit-assessment-table th, .fit-assessment-table td {
+            text-align: center;
+        }
+         .fluorescein-pattern {
+            font-weight: bold;
+            padding: 3px;
+            border-radius: 3px;
+        }
+        .fp-clearance { background-color: #a5d6a7; color: #1b5e20; /* Green for clearance */ }
+        .fp-touch { background-color: #ef9a9a; color: #b71c1c; /* Red for touch */ }
+        .fp-alignment { background-color: #fff59d; color: #f57f17; /* Yellow for alignment */ }
+    </style>
+</head>
+<body>
+
+<div class="cornell-container">
+    <div class="cornell-header">
+        Day 5: Fitting Spherical Soft & RGP Lenses
+    </div>
+    <div class="cornell-main">
+        <div class="cornell-cues">
+            <h3>Cues & Keywords</h3>
+            <p><strong>Soft Lens Fitting:</strong></p>
+            <ul>
+                <li>Trial Lens Selection (K's, HVID)</li>
+                <li>"Three-Point Touch"?</li>
+                <li>Centration (C)</li>
+                <li>Coverage (C)</li>
+                <li>Movement (M) - Push-up, Blink lag</li>
+                <li>Tight vs Loose Fit Signs</li>
+                <li>Over-Refraction (OR)</li>
+            </ul>
+            <p><strong>Soft Lens Parameter Changes:</strong></p>
+            <ul>
+                <li>Steeper BC -> Effect?</li>
+                <li>Flatter BC -> Effect?</li>
+                <li>Larger Diameter -> Effect?</li>
+                <li>Smaller Diameter -> Effect?</li>
+                <li>Sagittal Depth (Sag)</li>
+            </ul>
+            <p><strong>RGP Fitting (General):</strong></p>
+            <ul>
+                <li>Fluorescein Dye</li>
+                <li>Burton Lamp / Cobalt Blue Filter</li>
+                <li>Dynamic vs Static Fit</li>
+                <li>Alignment Fit Philosophy</li>
+                <li>Steep Fit Philosophy</li>
+                <li>Flat Fit Philosophy</li>
+            </ul>
+            <p><strong>RGP Fluorescein Patterns:</strong></p>
+            <ul>
+                <li>Apical Clearance (Green pool)</li>
+                <li>Apical Touch/Bearing (Dark/Black)</li>
+                <li>Peripheral Clearance (Edge lift)</li>
+                <li>Ideal Pattern?</li>
+            </ul>
+            <p><strong>RGP Fitting (Low Dk vs High Dk):</strong></p>
+            <ul>
+                <li>Material Flexure (High Dk)</li>
+                <li>Wettability issues (some High Dk)</li>
+                <li>Deposit resistance</li>
+            </ul>
+            <h3>Questions to Answer:</h3>
+            <ol>
+                <li>What are the 3 key things (C,C,M) you assess for a soft lens fit?</li>
+                <li>If a soft lens is too tight, what might you change in its parameters?</li>
+                <li>Describe an ideal RGP fluorescein pattern for an alignment fit.</li>
+                <li>What's a potential fitting challenge with some high Dk RGP materials?</li>
+            </ol>
+        </div>
+        <div class="cornell-notes">
+            <div class="important-concept">
+                <strong>Goal: Optimal Fit for Health & Vision.</strong> Whether soft or RGP, the lens must allow physiological exchange (tears, oxygen) and provide stable, clear vision.
+            </div>
+
+            <h2>Step 17: Fitting of Spherical Soft Contact Lenses</h2>
+            <p>Assessing how a soft lens sits and moves on the eye.</p>
+            <h3>Trial Lens Selection:</h3>
+            <ul>
+                <li><strong>Based on Keratometry (K's):</strong>
+                    <ul>
+                        <li>Flatter K's (e.g., < 42.00 D): May start with a flatter Base Curve (BC) option (e.g., 8.8 - 9.0 mm).</li>
+                        <li>Average K's (e.g., 42.00 - 45.00 D): May start with a median BC (e.g., 8.4 - 8.7 mm).</li>
+                        <li>Steeper K's (e.g., > 45.00 D): May start with a steeper BC option (e.g., 8.3 - 8.5 mm).</li>
+                        <li><em>Always consult manufacturer's fitting guides as BC ranges vary.</em></li>
+                    </ul>
+                </li>
+                <li><strong>Based on Horizontal Visible Iris Diameter (HVID):</strong> Lens diameter should typically be HVID + 2mm to ensure adequate corneal coverage.</li>
+                <li><strong>Refractive Error:</strong> Select initial power based on compensated spectacle Rx.</li>
+            </ul>
+            <h3>Assessing the Fit (after ~10-20 mins settling): "The 3 C's & M"</h3>
+            <table class="fit-assessment-table">
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Ideal Fit</th>
+                        <th>Signs of a TIGHT Fit (Steep)</th>
+                        <th>Signs of a LOOSE Fit (Flat)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Centration (C)</strong></td>
+                        <td>Lens centered over cornea, pupil well covered.</td>
+                        <td>Well-centered but may be immobile.</td>
+                        <td>Decentered (often inferiorly or temporally), may decenter significantly on blink.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Coverage (C)</strong></td>
+                        <td>Cornea fully covered in all gaze positions. Lens extends 0.5-1mm onto sclera all around.</td>
+                        <td>Full coverage usually.</td>
+                        <td>Edge lift, limbal exposure, especially on upgaze or lateral gaze.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Movement (M)</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Push-up Test:</strong> Lens moves freely when nudged with lower lid. Should move ~0.2-0.5 mm.</li>
+                                <li><strong>Blink Lag:</strong> Slight movement (~0.2-0.5 mm) downwards with each blink, then recenters quickly.</li>
+                            </ul>
+                        </td>
+                        <td>Minimal or no movement on push-up. Little to no blink lag. Conjunctival drag/vessel blanching at limbus.</td>
+                        <td>Excessive movement (>1mm) on push-up. Excessive blink lag, lens may ride high or drop low. Unstable vision.</td>
+                    </tr>
+                     <tr>
+                        <td><strong>Patient Comfort</strong></td>
+                        <td>Good comfort.</td>
+                        <td>Initial comfort may be okay, but can lead to redness, tightness sensation, blurry vision after removal (spectacle blur from edema).</td>
+                        <td>Awareness of lens edge, discomfort, fluctuating vision.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vision</strong></td>
+                        <td>Clear and stable.</td>
+                        <td>May be initially clear but can fluctuate or blur if edema occurs.</td>
+                        <td>Often unstable, blurry after blinks due to decentration.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Over-Refraction (OR):</strong> After confirming an acceptable fit, perform a spherical (and potentially cylindrical if vision isn't crisp) over-refraction to determine the final lens power.</p>
+            <div class="analogy">
+                <strong>Analogy - Soft Lens Fit:</strong>
+                <ul>
+                    <li><strong>Ideal Fit:</strong> A perfectly tailored, comfortable glove. Stays in place but allows some movement.</li>
+                    <li><strong>Tight Fit:</strong> A glove that's too small. Constricting, hard to move fingers.</li>
+                    <li><strong>Loose Fit:</strong> A glove that's too big. Sloppy, slides around.</li>
+                </ul>
+            </div>
+
+            <h2>Step 18: Effects of Parameter Changes in Spherical Soft Contact Lenses</h2>
+            <p>Understanding how changing BC or Diameter affects the fit.</p>
+            <ul>
+                <li><span class="key-term">Sagittal Depth (Sag):</span> The perpendicular distance between the geometric center of the back surface of the lens and the plane containing the lens edge. This is the primary determinant of soft lens fit.
+                    <ul>
+                        <li><strong>Increased Sag = Tighter Fit</strong></li>
+                        <li><strong>Decreased Sag = Looser Fit</strong></li>
+                    </ul>
+                </li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter Change</th>
+                        <th>Effect on Sagittal Depth</th>
+                        <th>Effect on Fit</th>
+                        <th>When to Make this Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Steepen Base Curve (BC)</strong> (e.g., 8.6mm to 8.3mm)</td>
+                        <td>Increases Sag</td>
+                        <td>Tighter Fit</td>
+                        <td>If current lens is too loose.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flatten Base Curve (BC)</strong> (e.g., 8.3mm to 8.6mm)</td>
+                        <td>Decreases Sag</td>
+                        <td>Looser Fit</td>
+                        <td>If current lens is too tight.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Increase Diameter (Dia)</strong> (keeping BC same)</td>
+                        <td>Increases Sag</td>
+                        <td>Tighter Fit (also improves coverage)</td>
+                        <td>If lens is loose and/or has poor coverage.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Decrease Diameter (Dia)</strong> (keeping BC same)</td>
+                        <td>Decreases Sag</td>
+                        <td>Looser Fit</td>
+                        <td>If lens is tight and edge is impinging. (Less common change).</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="study-tip">
+                <strong>Study Tip - Scenarios:</strong> If a patient's soft lens shows excessive movement and decenters inferiorly, what parameter(s) would you consider changing first? (Answer: Steepen BC or Increase Diameter).
+            </div>
+
+            <h2>Step 19: Fitting Spherical RGP Contact Lenses (Low Dk materials)</h2>
+            <p>RGP fitting relies heavily on <span class="key-term">fluorescein pattern assessment</span>.</p>
+            <h3>Fluorescein Sodium:</h3>
+            <ul>
+                <li>A yellow-orange dye that glows bright green under <span class="key-term">cobalt blue light</span> (from slit lamp or Burton lamp).</li>
+                <li>Instilled into the tear film. It highlights the thickness of the tear layer between the RGP lens and the cornea.
+                    <ul>
+                        <li><span class="fluorescein-pattern fp-clearance">Bright Green:</span> Thick tear layer = Clearance (lens is further from cornea).</li>
+                        <li><span class="fluorescein-pattern fp-touch">Dark/Black Area:</span> Thin or no tear layer = Touch/Bearing (lens is touching or very close to cornea).</li>
+                        <li><span class="fluorescein-pattern fp-alignment">Even, Thin Green:</span> Alignment (lens closely follows corneal curvature).</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Common RGP Fitting Philosophies & Ideal Patterns (Low Dk):</h3>
+            <table class="fit-assessment-table">
+                <thead>
+                    <tr>
+                        <th>Fitting Philosophy</th>
+                        <th>Ideal Fluorescein Pattern (Static & Dynamic)</th>
+                        <th>Movement</th>
+                        <th>Rationale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Alignment Fit (Lid-Attached or Interpalpebral)</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Apical (Central):</strong> Thin, even green <span class="fluorescein-pattern fp-alignment">alignment</span> or minimal (<0.50D) <span class="fluorescein-pattern fp-clearance">clearance</span>.</li>
+                                <li><strong>Mid-Peripheral:</strong> Good <span class="fluorescein-pattern fp-alignment">alignment</span>.</li>
+                                <li><strong>Peripheral:</strong> Adequate band of <span class="fluorescein-pattern fp-clearance">edge clearance/lift</span> (0.5-1.0mm wide) for tear exchange.</li>
+                            </ul>
+                        </td>
+                        <td>1-1.5mm smooth movement with blink. Good centration.</td>
+                        <td>Distributes lens weight evenly, promotes good tear exchange, generally comfortable.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Slightly Steep Fit (Apical Clearance)</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Apical:</strong> Definite central pool of <span class="fluorescein-pattern fp-clearance">fluorescein (clearance)</span>, like a "bull's eye."</li>
+                                <li><strong>Mid-Peripheral:</strong> May show some <span class="fluorescein-pattern fp-touch">bearing/touch</span>.</li>
+                                <li><strong>Peripheral:</strong> Adequate <span class="fluorescein-pattern fp-clearance">edge clearance</span>.</li>
+                            </ul>
+                        </td>
+                        <td>May be slightly less movement, good centration.</td>
+                        <td>Sometimes preferred for certain corneal shapes or to vault over a slightly irregular apex. Can reduce risk of central abrasion if lens decenters.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Slightly Flat Fit (Apical Touch/Bearing)</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Apical:</strong> Central <span class="fluorescein-pattern fp-touch">touch/bearing</span> (dark area).</li>
+                                <li><strong>Mid-Peripheral:</strong> Excessive <span class="fluorescein-pattern fp-clearance">clearance</span> ("moat").</li>
+                                <li><strong>Peripheral:</strong> May have excessive <span class="fluorescein-pattern fp-clearance">edge lift</span>.</li>
+                            </ul>
+                        </td>
+                        <td>Often excessive movement, poor centration (rides high or low).</td>
+                        <td><span class="key-term">Generally undesirable.</span> Can cause corneal abrasion, discomfort, spectacle blur. May be a temporary step in a very flat cornea fitting.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Dynamic Assessment:</strong> Observe pattern and movement immediately after a blink and as lens settles.</p>
+
+            <h2>Step 20: Fitting Spherical RGP Contact Lenses (High Dk materials)</h2>
+            <p>High Dk RGP materials offer better oxygen transmission but can have some different fitting considerations.</p>
+            <ul>
+                <li><strong>Increased Oxygen Benefits:</strong> Reduced risk of corneal hypoxia, better for extended wear (if applicable), good for compromised corneas.</li>
+                <li><strong>Potential Challenges with some High Dk Materials:</strong>
+                    <ul>
+                        <li><span class="key-term">Material Flexure:</span> Some higher Dk materials are less rigid and may bend or "flex" on an astigmatic cornea, inducing unwanted residual astigmatism. This can make the over-refraction tricky.</li>
+                        <li><span class="key-term">Surface Wettability:</span> Some silicone-containing materials can be inherently less wettable. May require plasma surface treatments or specific care solutions to maintain good wettability.</li>
+                        <li><strong>Deposit Resistance:</strong> Can vary. Fluorine in FSA materials helps.</li>
+                        <li><strong>Durability/Brittleness:</strong> Some high Dk materials might be slightly more prone to chipping or breaking than lower Dk ones.</li>
+                    </ul>
+                </li>
+                <li><strong>Fitting Approach:</strong>
+                    <ul>
+                        <li>Fluorescein pattern assessment remains the same.</li>
+                        <li>Be mindful of flexure during over-refraction, especially on toric corneas. Perform keratometry over the lens (on eye) to check for flexure if residual astigmatism is found.</li>
+                        <li>Choose appropriate care systems recommended for the specific high Dk material.</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="study-tip">
+                <strong>Study Tip - Draw Fluorescein Patterns:</strong> Sketch out what an ideal alignment fit, a steep fit, and a flat fit would look like with fluorescein. Label the areas of touch, alignment, and clearance.
+            </div>
+            <div class="interactive-question">
+                <p><strong>RGP Fit Scenario:</strong> You put an RGP lens on a patient. With fluorescein, you see a large, dark central area with a bright green ring around it in the mid-periphery, and good edge lift.
+                <br>1. What type of fit is this (flat, steep, or aligned)?
+                <br>2. What problem(s) might this cause for the patient?</p>
+                <details>
+                    <summary>Answer & Rationale</summary>
+                    <p>1. This describes a <span class="key-term">Flat Fit (Apical Touch/Bearing)</span>. The dark central area indicates the lens is resting heavily on the corneal apex, and the bright green "moat" in the mid-periphery shows excessive clearance there.
+                    <br>2. Problem(s) this might cause:
+                        <ul>
+                            <li><strong>Discomfort:</strong> Due to central bearing and potential for edge awareness if movement is excessive.</li>
+                            <li><strong>Corneal Abrasion/Staining:</strong> Constant rubbing on the corneal apex can damage the epithelium.</li>
+                            <li><strong>Spectacle Blur:</strong> Corneal molding/warpage from the pressure.</li>
+                            <li><strong>Poor/Unstable Vision:</strong> If the lens decenters significantly.</li>
+                            <li><strong>Lens Ejection:</strong> If movement is too great.</li>
+                        </ul>
+                    </p>
+                </details>
+            </div>
+        </div>
+    </div>
+    <div class="cornell-summary">
+        <h3>Day 5 Summary (Fill this in after your study session!)</h3>
+        <p><em>Today was about assessing spherical lens fits. For soft lenses, the "3 C's & M" (Centration, Coverage, Movement) are key, and adjusting BC/Diameter modifies sagittal depth to achieve optimal fit. For RGP lenses, fluorescein patterns are crucial: alignment shows even tear film, steep shows central pooling, and flat shows central touch. High Dk RGPs offer better oxygen but may have flexure or wettability considerations. An ideal alignment RGP fit shows... A tight soft lens can be identified by...</em></p>
+        <p><strong>Key Concepts I Need to Review Further:</strong></p>
+        <ul>
+            <li><em>(e.g., Quantifying soft lens movement accurately)</em></li>
+            <li><em>(e.g., Specific fluorescein patterns for different peripheral curve designs in RGPs)</em></li>
+            <li><em>(e.g., How to perform keratometry over an RGP lens to detect flexure)</em></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Quick Recall Notes: Steps 41-45</title>
+    <style>
+        body {
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5; /* Lighter, softer background */
+            color: #333a45;
+        }
+        .main-container {
+            max-width: 950px;
+            margin: 25px auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .main-header {
+            background: linear-gradient(135deg, #795548 0%, #4E342E 100%); /* Brown gradient for this block */
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            letter-spacing: 1px;
+        }
+        .step-container {
+            padding: 20px 25px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        .step-container:last-child {
+            border-bottom: none;
+        }
+        .step-title {
+            font-size: 1.6em;
+            color: #4E342E; /* Darker Brown */
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .step-section-title {
+            font-size: 1.1em;
+            color: #4A5568; /* Dark grey */
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            border-left: 4px solid #795548; /* Brown accent */
+            padding-left: 8px;
+        }
+        .keywords span {
+            display: inline-block;
+            background-color: #efebe9; /* Light brown for keywords */
+            color: #4e342e; /* Darker brown text */
+            padding: 3px 8px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        ul, ol {
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        table.recall-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        .recall-table th, .recall-table td {
+            border: 1px solid #d7ccc8; /* Lighter brown border */
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .recall-table th {
+            background-color: #efebe9; /* Very light brown */
+            font-weight: bold;
+            color: #4E342E; /* Darker Brown */
+        }
+        .layman-analogy, .mnemonic-box {
+            background-color: #fffadf; /* Light yellow */
+            border: 1px dashed #f0c000; /* Dashed yellow border */
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-style: italic;
+        }
+        .layman-analogy strong, .mnemonic-box strong {
+            font-style: normal;
+            color: #b8860b; /* Dark yellow */
+        }
+        .mini-summary {
+            background-color: #f1f8e9; /* Light green (contrast) */
+            border-left: 5px solid #558b2f; /* Darker green */
+            padding: 12px;
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+        details.self-check-detailed {
+            background-color: #e8eaf6; /* Light indigo for self-check */
+            border: 1px solid #c5cae9;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+        summary.self-check-summary-detailed {
+            font-weight: bold;
+            cursor: pointer;
+            color: #283593; /* Darker Indigo for self-check summary */
+            padding: 5px 0;
+        }
+        details.self-check-detailed p {
+            font-weight: normal;
+            color: #333;
+            margin-top: 10px;
+        }
+        .confidence-rating {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #e8e8e8;
+            text-align: right;
+        }
+        .confidence-rating label {
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 0.9em;
+        }
+        .confidence-rating select {
+            padding: 6px 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .complication-box { /* For Step 41 */
+            border: 1px solid #d32f2f;
+            background-color: #ffebee;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .complication-box h4 {
+            margin-top: 0;
+            color: #b71c1c;
+        }
+        .instrument-highlight { /* For Steps 42, 43 */
+            background-color: #e3f2fd; /* Light blue */
+            padding: 8px;
+            border-left: 4px solid #1e88e5; /* Blue */
+            margin: 10px 0;
+        }
+        .important-practice { /* For Step 44, 45 */
+            background-color: #e1f5fe; /* Light cyan */
+            border-left: 5px solid #0288d1; /* Cyan */
+            padding: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+         .solution-component { /* For Step 47 */
+            font-style: italic;
+            color: #00796b; /* Teal for components */
+        }
+        .critical-advice { /* For Step 48 */
+            background-color: #ffebee; /* Light red */
+            border-left: 5px solid #c62828; /* Dark red */
+            padding: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .future-trend { /* For Step 49 */
+            background-color: #ede7f6; /* Light Deep Purple */
+            border-left: 5px solid #5e35b1; /* Medium Deep Purple */
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .market-knowledge { /* For Step 50 */
+            background-color: #e8f5e9; /* Light green */
+            border-left: 5px solid #388e3c; /* Green */
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="main-header">
+        Detailed Quick Recall Notes: Contact Lens Steps 41-45
+    </div>
+
+    <!-- Step 41: Complications of Contact Lenses – Part 3 (Mechanical & Other) -->
+    <div class="step-container">
+        <h2 class="step-title">Step 41: Complications of Contact Lenses – Part 3 (Mechanical & Other)</h2>
+        <div class="keywords">
+            <span>SEALs</span> <span>Epithelial Abrasions</span> <span>Mucin Balls</span> <span>SICS</span> <span>Tight Lens Syndrome (TLS)</span> <span>CLIDE</span> <span>Mechanical Chafing</span> <span>Solution Toxicity</span>
+        </div>
+        <h3 class="step-section-title">Common Mechanical & Other Complications:</h3>
+        <table class="recall-table">
+            <thead><tr><th>Condition</th><th>Key Signs & Symptoms</th><th>Primary Cause(s)</th><th>Basic Management Approach</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><strong>Superior Epithelial Arcuate Lesions (SEALs) / Epithelial Splitting</strong></td>
+                    <td>Arc-shaped epithelial break/heaping, superior cornea (10-2 o'clock), stains with NaFl. Often asymptomatic or mild FBS.</td>
+                    <td>Mechanical chafing from stiff/thick upper edge of higher modulus soft lenses (esp. some SiHys) interacting with superior limbus/conjunctiva. Tight upper lid.</td>
+                    <td>Discontinue lens. Refit with lower modulus material, thinner edge, or different design/diameter. Ensure not too tight superiorly.</td>
+                </tr>
+                <tr>
+                    <td><strong>Epithelial Abrasions / Traumatic Keratitis</strong></td>
+                    <td>Sharp pain, FBS, tearing, redness, photophobia. Localized epithelial defect <span class="keywords"><span>stains brightly with NaFl</span></span>.</td>
+                    <td>Improper I&R, trapped foreign body, damaged lens edge, overwear leading to epithelial breakdown.</td>
+                    <td>Discontinue CLs. Prophylactic antibiotic drops. Consider BCL for large abrasions. Re-educate on handling. Inspect lens.</td>
+                </tr>
+                <tr>
+                    <td><strong>Mucin Balls / Pre-corneal Debris</strong></td>
+                    <td>Small, round, translucent "globules" in post-lens tear film, often with SiHys (esp. EW). Can indent epithelium (dimple veil staining post-removal). Usually asymptomatic.</td>
+                    <td>Tear film debris (mucin, lipids) rolling up under tighter fitting or less mobile SiHy lenses.</td>
+                    <td>Usually benign. If excessive/symptomatic, consider looser fit, different material, more frequent replacement, enhanced cleaning.</td>
+                </tr>
+                <tr>
+                    <td><strong>Solution-Induced Corneal Staining (SICS) / Preservative Associated Keratopathy</strong></td>
+                    <td>Diffuse, fine punctate corneal staining (SPK), often patterned (e.g., "bullseye"). Bilateral. Dryness, irritation, redness.</td>
+                    <td>Sensitivity/toxic reaction to preservatives (e.g., PHMB, Polyquad) or other components in MPS. More common with SiHy material interactions.</td>
+                    <td>Discontinue offending solution. Switch to different MPS (different preservative) or H2O2 system. Daily disposables.</td>
+                </tr>
+                <tr>
+                    <td><strong>Tight Lens Syndrome (TLS) / Acute Red Eye</strong></td>
+                    <td>Often after hours of wear/waking. Redness (circumlimbal flush), pain/discomfort, hazy vision, <span class="keywords"><span>lens immobile on push-up</span></span>. Conjunctival indentation. Trapped debris.</td>
+                    <td>Soft lens too steep/large → insufficient movement, tear exchange, O2. Lens dehydration can exacerbate.</td>
+                    <td>IMMEDIATE lens removal. Refit with looser lens (flatter BC, smaller Dia). Ensure adequate Dk/t. Can progress if not addressed.</td>
+                </tr>
+                <tr>
+                    <td><strong>Contact Lens-Induced Dry Eye (CLIDE)</strong></td>
+                    <td>Dryness symptoms (grittiness, burning, tired eyes, fluctuating VA) worse with CLs / end of day. Reduced TBUT over lens, deposits, conjunctival staining.</td>
+                    <td>Multifactorial: CL disrupts tear film, increased evaporation. Lens material (wettability, WC), solution effects, borderline pre-existing DED.</td>
+                    <td>Optimize material (e.g., lower WC SiHy, or high WC hydrogel with good surface tech). Change solutions. Ocular lubricants (CL-compatible). Manage MGD/blepharitis. Reduce wear time. DDs.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="layman-analogy">
+            <strong>Analogy - Mechanical Complications like Ill-Fitting Shoes:</strong>
+            <ul>
+                <li><strong>SEALs:</strong> "Like the stiff top edge of a new boot constantly rubbing your shin raw in one spot."</li>
+                <li><strong>Abrasions:</strong> "Getting a blister from a rock in your shoe or forcing your foot into a shoe that's way too small."</li>
+                <li><strong>SICS:</strong> "Like developing a rash from the dye or fabric softener used on your socks."</li>
+                <li><strong>TLS:</strong> "Wearing shoes that are far too tight, cutting off circulation and causing pain."</li>
+                <li><strong>CLIDE:</strong> "Shoes that make your feet feel incredibly dry and uncomfortable after wearing them for a while."</li>
+            </ul>
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Mechanical and other non-infectious, non-hypoxic complications often relate to lens fit, material properties, solution interactions, or underlying tear film issues. Careful fitting and problem-solving are key.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: A patient wearing silicone hydrogel lenses on an extended wear schedule presents with numerous small, translucent spheres visible under the lens on slit lamp, which leave small indentations on the cornea after lens removal. What are these likely to be?</summary>
+            <p>These are likely <span class="keywords"><span>Mucin Balls</span></span>. They are commonly seen with silicone hydrogel lenses, especially in extended wear, and are aggregates of tear film components that get trapped and roll under the lens. They typically cause dimple veil staining (indentations) rather than true fluorescein uptake.</p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step41_conf_detailed">Confidence:</label>
+            <select id="step41_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- Step 42: Use of Specular Microscopy in Contact Lens Practice -->
+    <div class="step-container">
+        <h2 class="step-title">Step 42: Use of Specular Microscopy in Contact Lens Practice</h2>
+        <div class="keywords">
+            <span>Corneal Endothelium</span> <span>Endothelial Cell Density (ECD)</span> <span>Polymegathism</span> <span>Pleomorphism</span> <span>Coefficient of Variation (CV)</span> <span>Hexagonality</span> <span>Non-invasive Imaging</span>
+        </div>
+        <div class="instrument-highlight">
+            <p><span class="keywords"><span>Specular Microscopy:</span></span> Non-invasive imaging to visualize and analyze the <span class="keywords"><span>corneal endothelium</span></span> (innermost cell layer).</p>
+        </div>
+        <h3 class="step-section-title">Why Assess the Endothelium?</h3>
+        <ul>
+            <li>Crucial for corneal transparency & hydration (pump function).</li>
+            <li><span class="keywords"><span>Does NOT regenerate significantly</span></span>; cell loss is permanent. Stressed cells change shape/size.</li>
+        </ul>
+        <h3 class="step-section-title">Key Parameters Analyzed:</h3>
+        <table class="recall-table">
+            <thead><tr><th>Parameter</th><th>Definition</th><th>Normal/Concern Values</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Endothelial Cell Density (ECD)</strong></td><td>Number of cells per mm²</td><td>Normal adult: ~2000-3000 cells/mm². Concern if significantly low or rapidly decreasing (critical < ~500-800).</td></tr>
+                <tr><td><span class="keywords"><span>Polymegathism</span></span> (Cell Size Variation)</td><td>Variation in individual cell area. Measured by Coefficient of Variation (CV) of cell area.</td><td>Normal CV < ~0.30-0.33. Higher CV indicates stress.</td></tr>
+                <tr><td><span class="keywords"><span>Pleomorphism</span></span> (Cell Shape Variation)</td><td>Variation from ideal hexagonal shape. Measured by % of hexagonal cells.</td><td>Normal >50-60% hexagonal. Lower % indicates stress.</td></tr>
+                <tr><td>Other Findings</td><td>Guttata (Fuchs'), cell drop-out areas, inflammatory cells.</td><td>Indicates specific pathologies or acute stress.</td></tr>
+            </tbody>
+        </table>
+        <h3 class="step-section-title">Clinical Applications in CL Practice:</h3>
+        <ul>
+            <li>Baseline before fitting <span class="keywords"><span>Extended Wear (EW)/Continuous Wear (CW)</span></span> lenses.</li>
+            <li>Monitoring long-term CL wearers (esp. history of low Dk/t wear or complications).</li>
+            <li>Pre-operative assessment for intraocular surgery if long-term CL wearer.</li>
+            <li>Investigating unexplained corneal edema or reduced corneal clarity.</li>
+            <li>Assessing patients with known endothelial dystrophies (e.g., Fuchs').</li>
+        </ul>
+        <div class="layman-analogy">
+            <strong>Analogy - Endothelium like a Honeycomb Tile Floor:</strong>
+            "The endothelium is like a floor made of perfect hexagonal tiles (<span class="keywords"><span>hexagonal cells</span></span>), all the same size (<span class="keywords"><span>low polymegathism</span></span>), tightly packed (<span class="keywords"><span>high ECD</span></span>). This 'floor' has a crucial job: pumping water out from underneath to keep the 'room above' (stroma) dry and clear.
+            If the floor gets stressed (hypoxia), some tiles might get damaged and fall out. The remaining tiles have to stretch and change shape (<span class="keywords"><span>pleomorphism, polymegathism</span></span>) to cover the gaps, and the overall number of tiles (<span class="keywords"><span>ECD</span></span>) decreases. If too many tiles are lost, the 'pump' fails, and the room floods (corneal edema)."
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Specular microscopy provides a vital window into endothelial health, allowing ECPs to detect early signs of cellular stress from CL wear or other factors, guiding clinical decisions to preserve long-term corneal integrity.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: A patient who wore old PMMA lenses for 30 years is found to have an ECD of 1200 cells/mm², a CV of 0.45, and 40% hexagonal cells. What do these findings indicate?</summary>
+            <p>These findings indicate significant endothelial stress and compromised endothelial health, likely due to chronic hypoxia from long-term PMMA wear:
+            <ul>
+                <li><strong>ECD of 1200 cells/mm²:</strong> Markedly reduced from normal young adult values, indicating significant cell loss.</li>
+                <li><strong>CV of 0.45:</strong> High polymegathism (normal <0.33), meaning significant variation in cell size.</li>
+                <li><strong>40% Hexagonality:</strong> High pleomorphism (normal >50-60%), meaning cells have lost their regular hexagonal shape.</li>
+            </ul>
+            This patient has a reduced endothelial reserve and is at higher risk for corneal decompensation, especially if undergoing further ocular stress like intraocular surgery or aggressive CL wear.
+            </p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step42_conf_detailed">Confidence:</label>
+            <select id="step42_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- Step 43: Use of Pachymetry in Contact Lens Practice -->
+    <div class="step-container">
+        <h2 class="step-title">Step 43: Use of Pachymetry in Contact Lens Practice</h2>
+        <div class="keywords">
+            <span>Corneal Thickness (CCT)</span> <span>Edema Detection</span> <span>Keratoconus Monitoring</span> <span>Ultrasound Pachymetry</span> <span>Optical Pachymetry (Scheimpflug, OCT)</span>
+        </div>
+        <div class="instrument-highlight">
+            <p><span class="keywords"><span>Pachymetry:</span></span> Measurement of <span class="keywords"><span>corneal thickness</span></span>, most commonly Central Corneal Thickness (CCT).</p>
+        </div>
+        <h3 class="step-section-title">Methods of Measurement:</h3>
+        <ul>
+            <li><span class="keywords"><span>Ultrasound Pachymetry:</span></span> Contact method using sound waves. Considered highly accurate.</li>
+            <li><span class="keywords"><span>Optical Pachymetry (Non-Contact):</span></span>
+                <ul>
+                    <li>Slit lamp mounted optical pachymeters.</li>
+                    <li>Scheimpflug imaging (e.g., Pentacam): Provides full corneal thickness map.</li>
+                    <li>Optical Coherence Tomography (OCT): Cross-sectional images and thickness maps.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 class="step-section-title">Normal CCT & Clinical Applications:</h3>
+        <ul>
+            <li><strong>Normal CCT:</strong> Average ~<span class="keywords"><span>520-560 microns (µm)</span></span>, but with significant individual variation. Baseline measurement is key.</li>
+            <li><strong>Detecting Corneal Edema:</strong>
+                <ul>
+                    <li>An <span class="keywords"><span>increase in CCT</span></span> from a known baseline indicates corneal swelling (edema).</li>
+                    <li>Crucial for monitoring patients at risk of hypoxia (e.g., EW/CW wearers, tight CL fits, low Dk/t lenses). A significant increase (e.g., >5-10% from baseline, or above diurnal variation) is a concern.</li>
+                    <li>Helps quantify edema seen on slit lamp (e.g., striae appear at ~5-8% swelling).</li>
+                </ul>
+            </li>
+            <li><strong>Monitoring Keratoconus:</strong>
+                <ul>
+                    <li>KC involves progressive corneal <span class="keywords"><span>thinning</span></span>, especially at the cone apex. Pachymetry (often via topography) helps track progression and assess severity.</li>
+                </ul>
+            </li>
+            <li><strong>Pre/Post Refractive Surgery Assessment:</strong>
+                <ul>
+                    <li>Baseline CCT is vital for determining suitability for ablative procedures (e.g., LASIK, PRK).</li>
+                    <li>Post-op measurements assess residual stromal bed thickness.</li>
+                </ul>
+            </li>
+            <li><strong>Glaucoma Management:</strong> CCT influences applanation tonometry IOP readings (thinner corneas → falsely low IOP; thicker → falsely high IOP). Correction factors may be applied.</li>
+            <li>Establishing a baseline CCT before initiating certain CL modalities or for long-term wearers.</li>
+        </ul>
+        <div class="layman-analogy">
+            <strong>Analogy - Pachymetry like Measuring the Thickness of a Sponge:</strong>
+            "The cornea is like a sponge. Pachymetry measures how thick it is.
+            <ul>
+                <li>If the sponge suddenly gets <span class="keywords"><span>thicker</span></span> than usual, it means it has absorbed too much water (<span class="keywords"><span>corneal edema</span></span>), perhaps because its 'breathing' (oxygen supply) is blocked.</li>
+                <li>For some conditions like keratoconus, the sponge material itself gets <span class="keywords"><span>thinner</span></span> over time in certain spots, and pachymetry helps track that thinning."</li>
+            </ul>
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Pachymetry provides a quantitative measure of corneal thickness, invaluable for detecting and quantifying corneal edema (a key sign of CL-induced hypoxia or other stress) and for monitoring conditions involving corneal thinning like keratoconus.
+        </div>
+        <details self-check-detailed>
+            <summary class="self-check-summary-detailed">Self-Check: A patient starting extended wear is found to have a baseline CCT of 540 µm. At their 1-week follow-up after starting EW, their CCT measures 585 µm. Is this a concern, and what does it indicate?</summary>
+            <p>Yes, this is a concern. The increase in CCT is 585 - 540 = 45 µm.
+            Percentage increase = (45 / 540) * 100 ≈ 8.3%.
+            An increase of over 5-8% typically indicates clinically significant <span class="keywords"><span>corneal edema</span></span>. This suggests the patient is experiencing hypoxic stress with the extended wear, despite likely being in a high Dk/t lens. The fit may be too tight, or they may not be a suitable candidate for EW. Further investigation and management (e.g., discontinuing EW, refitting, reducing wear time) are needed.</p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step43_conf_detailed">Confidence:</label>
+            <select id="step43_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- Step 44: Checking Finished Lens Parameters (Verification) -->
+    <div class="step-container">
+        <h2 class="step-title">Step 44: Checking Finished Lens Parameters (Verification)</h2>
+        <div class="keywords">
+            <span>Lens Verification</span> <span>RGP Parameters</span> <span>Radiuscope (BOZR)</span> <span>Lensometer (Power)</span> <span>Thickness Gauge (CT)</span> <span>Measuring Magnifier (OAD, OZD)</span> <span>ISO Tolerances</span>
+        </div>
+        <div class="important-practice">
+            <strong>Quality Control:</strong> Verifying lens parameters ensures the patient receives the exact lens prescribed, crucial for optimal fit, vision, and troubleshooting. Especially important for custom RGP lenses.
+        </div>
+        <h3 class="step-section-title">Why Verify Received Lenses?</h3>
+        <ul>
+            <li>Confirm accuracy of manufacturing against the ordered specifications.</li>
+            <li>Ensure lenses meet established tolerance standards (e.g., ISO standards).</li>
+            <li>Crucial for custom-made RGP lenses where precise parameters are critical.</li>
+            <li>Helps in troubleshooting if a patient has fitting problems or poor vision with a new lens.</li>
+            <li>Provides a baseline record of the actual lens parameters dispensed.</li>
+        </ul>
+        <h3 class="step-section-title">RGP Lens Parameters to Verify & Instruments Used:</h3>
+        <table class="recall-table">
+            <thead><tr><th>Parameter</th><th>Primary Instrument(s)</th><th>Brief Verification Note</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Back Optic Zone Radius (BOZR) / Base Curve</strong></td><td><span class="keywords"><span>Radiuscope</span></span></td><td>Measures sagittal depth to determine radius. Compare to ordered BC.</td></tr>
+                <tr><td><strong>Back Vertex Power (BVP)</strong></td><td><span class="keywords"><span>Lensometer (Focimeter)</span></span></td><td>Read power (sphere, cyl, axis if toric). Ensure correct for RGP (concave side on lens stop).</td></tr>
+                <tr><td><strong>Center Thickness (CT)</strong></td><td>Thickness Gauge (Dial or Digital)</td><td>Carefully measure at geometric center.</td></tr>
+                <tr><td><strong>Overall Diameter (OAD)</strong></td><td>Measuring Magnifier (V-groove reticle), Profile Analyzer</td><td>Measure edge to edge.</td></tr>
+                <tr><td><strong>Optic Zone Diameter (OZD / BOZD)</strong></td><td>Measuring Magnifier, Profile Analyzer, Shadowgraph</td><td>Identify transition from central curve to peripheral curves.</td></tr>
+                <tr><td><strong>Peripheral Curve Widths (PCW) & Radii (PCR)</strong></td><td>Measuring Magnifier (widths), Profile Analyzer, sometimes Radiuscope (radii if distinct).</td><td>Often qualitative assessment of blends and widths; precise radii verification is complex.</td></tr>
+                <tr><td><strong>Edge Contour & Surface Quality</strong></td><td>Stereomicroscope, Slit Lamp (low mag), Hand Magnifier, Projection Magnifier.</td><td>Check for smooth, well-polished edge; no chips, scratches, crazing, residues.</td></tr>
+                <tr><td><strong>Tint / Markings</strong></td><td>Visual inspection.</td><td>Confirm correct color, any identification dots/marks.</td></tr>
+            </tbody>
+        </table>
+        <h3 class="step-section-title">Soft Lens Verification:</h3>
+        <ul>
+            <li>Primarily involves confirming parameters from <span class="keywords"><span>packaging</span></span> (BC, Diameter, Power, Material, Expiry Date) against the order.</li>
+            <li><span class="keywords"><span>Power verification</span></span> with a lensometer (can be done, but lens needs to be blotted carefully and handling is key due to flexibility).</li>
+            <li>Visual inspection for any tears, defects, or contaminants in the blister pack.</li>
+        </ul>
+        <p><span class="keywords"><span>Tolerance Standards:</span></span> ISO (International Organization for Standardization) and ANSI (American National Standards Institute) provide acceptable deviation limits for manufactured CL parameters (e.g., BOZR ±0.05mm, Power ±0.25D). Lenses outside these tolerances should ideally be rejected and reordered.</p>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Lens verification is a crucial quality assurance step, especially for RGP lenses, to ensure the patient receives the correctly manufactured lens, optimizing the chances of a successful fit and visual outcome.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: You receive an RGP lens ordered with a BOZR of 7.80mm. Using a radiuscope, you measure it as 7.92mm. According to typical ISO tolerance for BOZR (±0.05mm), is this lens within tolerance?</summary>
+            <p>No, this lens is <span class="keywords"><span>out of tolerance</span></span>.
+            The ordered BOZR is 7.80mm. The tolerance is ±0.05mm, meaning acceptable values are between 7.75mm and 7.85mm.
+            A measured value of 7.92mm is 0.12mm flatter than ordered, exceeding the 0.05mm tolerance limit. This lens should be rejected.
+            </p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step44_conf_detailed">Confidence:</label>
+            <select id="step44_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- ... Continue for Steps 45 through 50 using the same detailed structure ... -->
+
+</div> <!-- End Main Container -->
+
+</body>
+</html>

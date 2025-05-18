@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6: RGP Parameter Changes, Astigmatism, Aphakia & Pseudophakia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .cornell-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .cornell-header {
+            background-color: #03A9F4; /* Light Blue */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .cornell-main {
+            display: flex;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+        .cornell-cues {
+            flex: 1;
+            padding: 15px;
+            border-right: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        .cornell-notes {
+            flex: 3;
+            padding: 15px;
+        }
+        .cornell-summary {
+            padding: 15px;
+            border-top: 2px solid #03A9F4;
+            background-color: #e1f5fe; /* Very Light Blue */
+            margin-top: 0;
+        }
+        h1, h2, h3 {
+            color: #0277bd; /* Darker Light Blue */
+        }
+        h2 {
+            border-bottom: 2px solid #03A9F4;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #0288d1; /* Medium Light Blue */
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #b3e5fc; /* Lighter Light Blue */
+        }
+        ul, ol {
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        .mnemonic {
+            background-color: #fffacd;
+            border-left: 5px solid #ffd700;
+            padding: 10px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .analogy {
+            background-color: #e0f7fa;
+            border-left: 5px solid #00bcd4;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .key-term {
+            font-weight: bold;
+            color: #c62828;
+        }
+        .cl-relevance {
+            background-color: #ffebee;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        details {
+            background-color: #e1f5fe; /* Very light blue */
+            border: 1px solid #b3e5fc; /* Lighter blue border */
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            color: #01579b; /* Very dark blue */
+        }
+        .study-tip {
+            background-color: #fff9c4;
+            border: 1px solid #fff176;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+        .important-concept {
+            background-color: #ffecb3;
+            border-left: 5px solid #ff9800;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .problem-solution-table td, .problem-solution-table th {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cornell-container">
+    <div class="cornell-header">
+        Day 6: RGP Parameter Changes, Astigmatism, Aphakia & Pseudophakia
+    </div>
+    <div class="cornell-main">
+        <div class="cornell-cues">
+            <h3>Cues & Keywords</h3>
+            <p><strong>RGP Parameter Changes:</strong></p>
+            <ul>
+                <li>Steepen BOZR -> Effect?</li>
+                <li>Flatten BOZR -> Effect?</li>
+                <li>Increase BOZD -> Effect?</li>
+                <li>Decrease BOZD -> Effect?</li>
+                <li>Steepen PCR -> Effect?</li>
+                <li>Flatten PCR -> Effect?</li>
+                <li>Increase PCW -> Effect?</li>
+                <li>Increase OAD -> Effect?</li>
+                <li>SAM-FAP Rule</li>
+            </ul>
+            <p><strong>Astigmatism:</strong></p>
+            <ul>
+                <li>Corneal vs. Internal/Lenticular</li>
+                <li>Total Astigmatism</li>
+                <li>Residual Astigmatism (RA)</li>
+                <li>Spherical Soft Lens masking?</li>
+                <li>Spherical RGP correction (Lacrimal Lens)</li>
+                <li>When are Toric CLs needed?</li>
+            </ul>
+            <p><strong>Aphakia:</strong></p>
+            <ul>
+                <li>Definition?</li>
+                <li>High Plus Powers</li>
+                <li>Lens Design Challenges (CT, weight, OZD)</li>
+                <li>Soft Lens for Aphakia (Lenticulation)</li>
+                <li>RGP Lens for Aphakia</li>
+                <li>Patient Handling Issues</li>
+            </ul>
+            <p><strong>Pseudophakia:</strong></p>
+            <ul>
+                <li>Definition? (IOL)</li>
+                <li>Residual Refractive Error</li>
+                <li>Post-op Astigmatism</li>
+                <li>CL fitting considerations</li>
+                <li>Easier than aphakia?</li>
+            </ul>
+            <h3>Questions to Answer:</h3>
+            <ol>
+                <li>If an RGP shows central touch (flat fit), what BOZR change would you make?</li>
+                <li>When can a spherical RGP effectively correct corneal astigmatism?</li>
+                <li>What is a major challenge in designing a high plus CL for an aphakic patient?</li>
+                <li>Why is CL fitting generally more straightforward in pseudophakia than aphakia?</li>
+            </ol>
+        </div>
+        <div class="cornell-notes">
+            <div class="important-concept">
+                <strong>Fine-Tuning & Special Cases:</strong> Understanding how to adjust RGP parameters is key to problem-solving. Astigmatism requires careful thought on lens choice. Aphakia and pseudophakia present unique optical and fitting challenges.
+            </div>
+
+            <h2>Step 21: Effects of RGP CL Parameter Changes on Lens Fitting</h2>
+            <p>Knowing how to modify an RGP design to improve the fit based on fluorescein pattern and lens behavior.</p>
+            <div class="mnemonic">
+                <strong>SAM - FAP Rule (for BOZR changes and power):</strong>
+                <ul>
+                    <li><strong>S</strong>teeper <strong>A</strong>dd <strong>M</strong>inus (If you make the BOZR steeper, you add minus power to the lens to compensate for the change in the tear lens power).</li>
+                    <li><strong>F</strong>latter <strong>A</strong>dd <strong>P</strong>lus (If you make the BOZR flatter, you add plus power).</li>
+                    <li><em>This primarily applies when trying to maintain the same overall refractive correction after a BC change.</em></li>
+                </ul>
+            </div>
+            <table class="problem-solution-table">
+                <thead>
+                    <tr>
+                        <th>Parameter Changed</th>
+                        <th>How it's Changed</th>
+                        <th>Effect on Fluorescein Pattern & Fit</th>
+                        <th>Impact on Power (if maintaining overall Rx)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2"><strong>Back Optic Zone Radius (BOZR) / Base Curve (BC)</strong></td>
+                        <td>Steepen (e.g., 7.8mm to 7.7mm)</td>
+                        <td>Increases central/apical clearance (more green centrally). <span class="key-term">Tightens overall fit.</span> Reduces movement.</td>
+                        <td>Add Minus (SAM)</td>
+                    </tr>
+                    <tr>
+                        <td>Flatten (e.g., 7.7mm to 7.8mm)</td>
+                        <td>Decreases central/apical clearance (more touch centrally). <span class="key-term">Loosens overall fit.</span> Increases movement.</td>
+                        <td>Add Plus (FAP)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>Back Optic Zone Diameter (BOZD) / Optic Zone Diameter (OZD)</strong></td>
+                        <td>Increase</td>
+                        <td>Enlarges central fitting zone. May increase apical clearance if BOZR is steep relative to cornea. Can improve centration if too small.</td>
+                        <td>Minimal direct power effect, but affects sag.</td>
+                    </tr>
+                    <tr>
+                        <td>Decrease</td>
+                        <td>Reduces central fitting zone. May increase apical touch if BOZR is flat. Peripheral curves start sooner.</td>
+                        <td>Minimal direct power effect, but affects sag.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>Peripheral Curve Radius (PCR)</strong></td>
+                        <td>Steepen (smaller mm value)</td>
+                        <td>Reduces peripheral edge clearance/lift. <span class="key-term">Tightens peripheral fit.</span></td>
+                        <td>No direct effect on central power.</td>
+                    </tr>
+                    <tr>
+                        <td>Flatten (larger mm value)</td>
+                        <td>Increases peripheral edge clearance/lift. <span class="key-term">Loosens peripheral fit.</span></td>
+                        <td>No direct effect on central power.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><strong>Peripheral Curve Width (PCW)</strong></td>
+                        <td>Increase</td>
+                        <td>Widens the area of that specific peripheral curve. Pushes subsequent curves further out.</td>
+                        <td>No direct effect on central power.</td>
+                    </tr>
+                    <tr>
+                        <td>Decrease</td>
+                        <td>Narrows the area of that specific peripheral curve. Allows subsequent curves to start sooner.</td>
+                        <td>No direct effect on central power.</td>
+                    </tr>
+                     <tr>
+                        <td rowspan="2"><strong>Overall Diameter (OAD)</strong></td>
+                        <td>Increase</td>
+                        <td>Increases sagittal depth (tighter fit if BC unchanged). May improve centration (especially for lid-attached fits) or coverage.</td>
+                        <td>Can affect centration and stability.</td>
+                    </tr>
+                    <tr>
+                        <td>Decrease</td>
+                        <td>Decreases sagittal depth (looser fit if BC unchanged). May be needed if OAD is too large causing impingement or excessive lid interaction.</td>
+                        <td>Can affect centration and stability.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="study-tip">
+                <strong>Study Tip - RGP Troubleshooting:</strong>
+                Imagine an RGP lens that drops low and has central apical touch.
+                <br>1. What type of fit is this indicating centrally? (Flat)
+                <br>2. What change to the BOZR would you make? (Steepen)
+                <br>3. What change to OAD might help with a low-riding lens? (Slightly increase if lid interaction desired, or sometimes decrease if too heavy).
+            </div>
+
+            <h2>Step 22: Understanding Astigmatism & Basic Correction Options</h2>
+            <p>Astigmatism is when the eye doesn't focus light evenly due to an irregularly shaped cornea or lens.</p>
+            <h3>Types of Astigmatism:</h3>
+            <ul>
+                <li><span class="key-term">Corneal Astigmatism:</span> Caused by the cornea being shaped more like a football (toric) than a basketball (spherical). Measured by Keratometry or Topography.</li>
+                <li><span class="key-term">Internal/Lenticular Astigmatism:</span> Caused by the crystalline lens inside the eye being tilted or toric. Cannot be measured directly by K's.</li>
+                <li><span class="key-term">Total Astigmatism:</span> The astigmatism measured during subjective refraction (what's in the spectacle Rx). It's the sum of corneal and internal astigmatism.</li>
+                <li><span class="key-term">Residual Astigmatism (RA):</span> The astigmatism that <span class="key-term">remains uncorrected</span> when a spherical contact lens is placed on an astigmatic eye.
+                    <ul>
+                        <li>With a <span class="key-term">spherical soft CL</span>, RA ≈ Total Astigmatism (because soft lenses drape and don't significantly correct corneal astigmatism).</li>
+                        <li>With a <span class="key-term">spherical RGP CL</span>, RA ≈ Internal/Lenticular Astigmatism (because the RGP's tear lens corrects most of the corneal astigmatism).</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Basic Correction Options with Spherical Lenses:</h3>
+            <ul>
+                <li><strong>Spherical Soft Contact Lenses:</strong>
+                    <ul>
+                        <li>Generally, can "mask" or tolerate small amounts of total astigmatism (<span class="cl-relevance">typically ≤ 0.75 D, maybe up to 1.00 D if patient is not visually demanding</span>).</li>
+                        <li>If RA (which is basically total astigmatism here) is >0.75D - 1.00D, vision will likely be blurry, and a <span class="key-term">toric soft CL</span> is needed.</li>
+                    </ul>
+                </li>
+                <li><strong>Spherical RGP Contact Lenses:</strong>
+                    <ul>
+                        <li>The <span class="key-term">lacrimal lens (tear lens)</span> formed under an RGP neutralizes most of the corneal astigmatism.</li>
+                        <li><span class="cl-relevance">Spherical RGPs are an excellent option if most of the total astigmatism is corneal.</span></li>
+                        <li>If the <span class="key-term">Residual Astigmatism</span> (i.e., the internal/lenticular astigmatism) is significant (>0.75D - 1.00D), then a <span class="key-term">toric RGP</span> (front surface toric, back surface toric, or bitoric) may be needed.</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="analogy">
+                <strong>Analogy - RGP Tear Lens for Astigmatism:</strong> Imagine a bumpy, irregular road surface (astigmatic cornea). An RGP lens is like laying down a perfectly smooth, rigid sheet of glass over it. The "potholes" (irregularities) under the glass fill up with "water" (tears), creating a new, smooth front surface for light to pass through.
+            </div>
+            <div class="interactive-question">
+                <p><strong>Astigmatism Scenario:</strong> Spectacle Rx: -3.00 / -1.50 x 180. K-readings: 43.00 @ 180 / 44.50 @ 090.
+                <br>1. How much corneal astigmatism is there?
+                <br>2. If you fit a spherical RGP, approximately how much residual astigmatism would you expect? Would a spherical RGP likely work well?
+                </p>
+                <details>
+                    <summary>Answer & Rationale</summary>
+                    <p>1. Corneal Astigmatism = 44.50 D - 43.00 D = <span class="key-term">1.50 D</span> (WTR, as the vertical meridian @090 is steeper).
+                    <br>2. Total Astigmatism (from Rx) = 1.50 D. Corneal Astigmatism = 1.50 D.
+                    <br>Residual Astigmatism (RA) with spherical RGP ≈ Total Astigmatism - Corneal Astigmatism.
+                    <br>RA ≈ 1.50 D - 1.50 D = <span class="key-term">0 D</span> (approximately).
+                    <br>Yes, a spherical RGP would likely work very well because almost all the astigmatism is corneal and will be corrected by the tear lens.
+                    </p>
+                </details>
+            </div>
+
+            <h2>Step 23: Fitting Contact Lenses in Aphakia</h2>
+            <p><span class="key-term">Aphakia</span> is the absence of the eye's crystalline lens, usually after cataract surgery without an intraocular lens (IOL) implant, or due to trauma/congenital conditions.</p>
+            <h3>Key Challenges & Considerations:</h3>
+            <ul>
+                <li><span class="key-term">Very High Plus Powers Needed:</span> Typically +10.00 D to +20.00 D or even higher.
+                    <ul><li>Causes CLs to be very thick centrally, leading to:</li></ul>
+                </li>
+                <li><strong>Lens Design for High Plus Powers:</strong>
+                    <ul>
+                        <li><span class="key-term">Center Thickness (CT):</span> Significant. Can reduce Dk/t dramatically, leading to hypoxia.
+                        <li><span class="key-term">Lens Mass/Weight:</span> Heavy lenses tend to decenter inferiorly.
+                        <li><span class="key-term">Optic Zone Diameter (OZD):</span> Must be large enough due to dilated pupil often seen in aphakia, but larger OZD increases thickness.
+                        <li><span class="key-term">Lenticulation (for soft lenses):</span> The peripheral part of the lens is thinned down (a "carrier") to reduce overall mass and improve comfort/centration. RGP designs may also use special peripheral curves or blended lenticulars.</li>
+                    </ul>
+                </li>
+                <li><strong>Material Choice:</strong> <span class="key-term">High Dk materials are ESSENTIAL</span> due to the thickness, especially for soft lenses (Silicone Hydrogels preferred) and RGPs.</li>
+                <li><strong>Patient Profile:</strong>
+                    <ul>
+                        <li>Often elderly (post-cataract surgery without IOL) or very young (congenital aphakia).</li>
+                        <li>May have handling difficulties (dexterity, vision).
+                        <li>May have other ocular conditions (e.g., post-surgical corneal changes, glaucoma).</li>
+                    </ul>
+                </li>
+                <li><strong>Fitting Approach:</strong>
+                    <ul>
+                        <li><strong>Soft Lenses:</strong> Specialized aphakic designs. Careful assessment of centration and movement is crucial due to lens weight.</li>
+                        <li><strong>RGP Lenses:</strong> Can provide excellent optics. Smaller OAD might be used to reduce mass. High Dk materials.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Step 24: Fitting Contact Lenses in Pseudophakia</h2>
+            <p><span class="key-term">Pseudophakia</span> is when the natural crystalline lens has been replaced with an artificial <span class="key-term">Intraocular Lens (IOL)</span>, typically during cataract surgery.</p>
+            <h3>CL Fitting Considerations (Generally More Straightforward than Aphakia):</h3>
+            <ul>
+                <li><strong>Reason for CL Wear:</strong>
+                    <ul>
+                        <li><span class="key-term">Residual Refractive Error:</span> The IOL power calculation wasn't perfect, leaving the patient myopic, hyperopic, or astigmatic.
+                        <li><span class="key-term">Anisometropia:</span> If only one eye had surgery, or IOL powers differ significantly.</li>
+                        <li>Patient preference (e.g., for sports, don't want to wear glasses).</li>
+                    </ul>
+                </li>
+                <li><strong>Refractive Powers:</strong> Usually much lower and more "normal" range than in aphakia. Standard CL designs are often suitable.</li>
+                <li><strong>Corneal Condition:</strong> Assess for any post-surgical changes, dry eye, or astigmatism induced by incisions. Corneal topography can be useful.</li>
+                <li><strong>IOL Type:</strong> Most IOLs don't significantly affect CL fitting, but awareness of multifocal IOLs is important if patient complains of visual disturbances.</li>
+                <li><strong>Timing of Fit:</strong> Usually wait for the eye to be stable post-surgery (e.g., 4-8 weeks, or as advised by surgeon).</li>
+            </ul>
+            <div class="important-concept">
+                Fitting CLs on pseudophakic eyes is often similar to fitting a "phakic" (normal lens) eye, but with careful attention to the post-surgical ocular surface and any residual refractive error.
+            </div>
+        </div>
+    </div>
+    <div class="cornell-summary">
+        <h3>Day 6 Summary (Fill this in after your study session!)</h3>
+        <p><em>Today, I learned how to adjust RGP parameters like BOZR and PCR to refine the fit, using rules like SAM-FAP for power. Understanding astigmatism involves differentiating corneal from internal, and knowing that spherical RGPs correct corneal astigmatism via the tear lens is key. Aphakic fitting is challenging due to high plus powers and thick lenses, requiring high Dk materials and specialized designs. Pseudophakic fitting is generally simpler, addressing residual refractive errors post-IOL surgery. For example, if an RGP is too tight peripherally, I would... If a patient has 2D of corneal astigmatism and 0.5D internal astigmatism, a spherical RGP would likely leave...</em></p>
+        <p><strong>Key Concepts I Need to Review Further:</strong></p>
+        <ul>
+            <li><em>(e.g., Calculating resultant tear lens power after BOZR changes in RGPs)</em></li>
+            <li><em>(e.g., Specific RGP lenticular designs for aphakia)</em></li>
+            <li><em>(e.g., Javal's Rule for predicting total astigmatism - though not explicitly in syllabus, it's related)</em></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

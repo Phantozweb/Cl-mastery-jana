@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Recall Review: Contact Lens Steps 1-25</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #eef2f3; /* Light grayish blue */
+            color: #333;
+        }
+        .review-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+            border-radius: 8px;
+        }
+        .review-header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Different Purple/Blue gradient */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.8em;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .phase-section {
+            margin-bottom: 30px;
+            padding: 15px;
+        }
+        .phase-title {
+            font-size: 1.6em;
+            color: #2575fc; /* Blue from gradient */
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #2575fc;
+            text-align: center;
+        }
+        .step-recall-block { /* Renamed from step-review-block */
+            background-color: #fdfdff;
+            border: 1px solid #e0e0e0;
+            border-left: 7px solid #6a11cb; /* Purple from gradient */
+            padding: 15px 20px; /* Adjusted padding */
+            margin-bottom: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .step-recall-block h3 {
+            margin-top: 0;
+            color: #1e3a8a; /* Dark Blue */
+            font-size: 1.25em; /* Adjusted size */
+            margin-bottom: 12px;
+        }
+        .recall-prompts ul { /* Renamed from recall-section */
+            list-style-type: '👉'; /* Custom bullet */
+            margin-left: 5px; /* Adjusted indent */
+            padding-left: 15px; /* Space for bullet */
+        }
+        .recall-prompts li {
+            margin-bottom: 8px;
+            color: #444; /* Slightly darker text for prompts */
+        }
+        details.self-check { /* Renamed */
+            background-color: #f0f4f8; /* Lighter blue/grey */
+            border: 1px solid #d3e0ea;
+            border-radius: 4px;
+            padding: 10px 15px;
+            margin: 12px 0;
+        }
+        summary.self-check-summary { /* Renamed */
+            font-weight: bold;
+            cursor: pointer;
+            color: #1976d2; /* Medium Blue */
+            padding: 3px 0;
+        }
+        details.self-check p {
+            font-weight: normal;
+            color: #333;
+            margin-top: 8px;
+            font-size: 0.95em;
+        }
+        .confidence-check { /* Renamed */
+            margin-top: 12px;
+            padding-top: 8px;
+            border-top: 1px dashed #ccc;
+        }
+        .confidence-check label {
+            font-weight: bold;
+            margin-right: 8px;
+            font-size: 0.9em;
+        }
+        .confidence-check select {
+            padding: 5px 7px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background-color: white;
+            font-size: 0.9em;
+        }
+         /* Quick Navigation Bar (kept for structure) */
+        .quick-nav {
+            position: sticky;
+            top: 0;
+            background-color: rgba(255,255,255,0.98);
+            padding: 12px 20px;
+            z-index: 1000;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .quick-nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #6a11cb;
+            font-weight: 500;
+            font-size: 0.95em;
+            transition: color 0.2s ease-in-out;
+        }
+        .quick-nav a:hover, .quick-nav a:focus {
+            color: #2575fc;
+            text-decoration: underline;
+        }
+         .quick-nav a:last-child {
+            margin-right: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="review-container">
+    <div class="review-header">
+        Quick Recall Review: Contact Lens Steps 1-25
+    </div>
+
+    <div class="quick-nav">
+        <a href="#phase1recall">Phase 1 (Steps 1-5)</a>
+        <a href="#phase2recall">Phase 2 (Steps 6-14)</a>
+        <a href="#phase3recall">Phase 3 (Steps 15-25)</a>
+    </div>
+
+    <div id="phase1recall" class="phase-section">
+        <h2 class="phase-title">Phase 1 Recall: Foundations (Steps 1-5)</h2>
+
+        <!-- Step 1 -->
+        <div class="step-recall-block">
+            <h3>Step 1: Corneal Anatomy</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>List the 5 corneal layers (mnemonic!). Key function of each?</li>
+                    <li>Which layer doesn't regenerate? Significance?</li>
+                    <li>Endothelial pump: What does it do?</li>
+                    <li>Corneal innervation: Nerve source? Significance for CLs?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: What makes the stroma transparent?</summary>
+                <p>Regular arrangement of collagen fibrils, avascularity, and relative deturgescence maintained by endothelial pump.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step1_conf">Confidence:</label>
+                <select id="step1_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-recall-block">
+            <h3>Step 2: Corneal Physiology</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Primary O2 sources (open vs. closed eye)?</li>
+                    <li>What is deturgescence? How is it maintained?</li>
+                    <li>Define aerobic vs. anaerobic metabolism. Byproduct of anaerobic?</li>
+                    <li>Role of the tear film in corneal physiology (3 functions).</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: What is Sattler's Veil related to?</summary>
+                <p>Epithelial edema, often due to acute hypoxia, causing patient to see halos or hazy vision.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step2_conf">Confidence:</label>
+                <select id="step2_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-recall-block">
+            <h3>Step 3: Corneal Physiology AND Contact Lens Interactions</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>How does a CL affect O2 supply? Define Dk and Dk/t.</li>
+                    <li>Impact of a CL on CO2 exchange?</li>
+                    <li>Mechanical effects of a CL on the cornea/conjunctiva?</li>
+                    <li>How can lens deposits impact corneal physiology?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: What are corneal microcysts indicative of?</summary>
+                <p>Chronic, low-grade corneal hypoxia.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step3_conf">Confidence:</label>
+                <select id="step3_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-recall-block">
+            <h3>Step 4: Introduction to Slit Lamp Biomicroscopy</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Purpose of a slit lamp? Key parts (illumination, observation)?</li>
+                    <li>Describe diffuse illumination and its use.</li>
+                    <li>Difference between parallelepiped and optic section? Use for each?</li>
+                    <li>Principle of retroillumination? What can it highlight?</li>
+                    <li>Which filter is used with fluorescein?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: What is specular reflection primarily used to view?</summary>
+                <p>The corneal endothelium (individual cell morphology).</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step4_conf">Confidence:</label>
+                <select id="step4_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step-recall-block">
+            <h3>Step 5: Glossary of Contact Lens Terms - Part 1 (Basic Parameters)</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Define: BC/BCR, OAD/TD, OZD/BOZD, BVP, CT.</li>
+                    <li>Explain Dk vs Dk/t. Which is a material property, which a lens property?</li>
+                    <li>What does HEMA stand for? Primary component of which lens type?</li>
+                    <li>What is SiHy? Key advantage over HEMA?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: A steeper BC has a (larger/smaller) mm radius value?</summary>
+                <p>Smaller mm radius value.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step5_conf">Confidence:</label>
+                <select id="step5_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+    </div> <!-- End Phase 1 -->
+
+    <div id="phase2recall" class="phase-section">
+        <h2 class="phase-title">Phase 2 Recall: Lens Basics & Assessment (Steps 6-14)</h2>
+
+        <!-- Step 6 -->
+        <div class="step-recall-block">
+            <h3>Step 6: Contact Lens Materials</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Key characteristic of PMMA? Why rarely used?</li>
+                    <li>RGP evolution: SA vs. FSA – key additions/benefits?</li>
+                    <li>Soft Hydrogels: Role of water content? FDA Groups (ionic/non-ionic impact)?</li>
+                    <li>Silicone Hydrogels: Primary O2 pathway? Modulus & wettability considerations?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: Which type of hydrogel material (ionic/non-ionic) tends to attract more protein deposits?</summary>
+                <p>Ionic materials.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step6_conf">Confidence:</label>
+                <select id="step6_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="step-recall-block">
+            <h3>Step 7: Optics of Contact Lenses</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Vertex distance: When is compensation critical (approx. power)? Direction of change for high minus/plus Rx?</li>
+                    <li>Define effective power.</li>
+                    <li>Lacrimal lens concept: Most significant for which lens type? How does it help?</li>
+                    <li>What is spherical aberration? How can CLs address it?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: If a spectacle Rx is -10.00 D, will the CL power be more or less minus?</summary>
+                <p>Less minus.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step7_conf">Confidence:</label>
+                <select id="step7_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 8 -->
+        <div class="step-recall-block">
+            <h3>Step 8: Indications for Contact Lens Wear</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>List 3 optical/refractive indications (e.g., high Rx, aniso).</li>
+                    <li>Give 1 therapeutic indication.</li>
+                    <li>Give 1 cosmetic indication.</li>
+                    <li>Why might CLs be preferred for sports over glasses?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: How do CLs help with anisometropia compared to spectacles?</summary>
+                <p>They minimize aniseikonia (differences in retinal image size).</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step8_conf">Confidence:</label>
+                <select id="step8_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 9 -->
+        <div class="step-recall-block">
+            <h3>Step 9: Contraindications for Contact Lens Wear</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Differentiate absolute vs. relative contraindications.</li>
+                    <li>Name 2 absolute contraindications.</li>
+                    <li>Name 2 relative contraindications.</li>
+                    <li>Why is uncontrolled diabetes a relative contraindication?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: Is active anterior segment infection an absolute or relative contraindication?</summary>
+                <p>Absolute.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step9_conf">Confidence:</label>
+                <select id="step9_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 10 -->
+        <div class="step-recall-block">
+            <h3>Step 10: Rigid Gas Permeable (RGP) Contact Lens Design Principles</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Define BOZR and BOZD. How is BOZR typically chosen?</li>
+                    <li>Purpose of peripheral curves (PCW, PCR)?</li>
+                    <li>What is edge lift/clearance and why is it important?</li>
+                    <li>Difference between spherical and aspheric RGP back surfaces?</li>
+                    <li>What is lenticulation and when is it used?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: Flatter peripheral curves provide (more/less) edge lift?</summary>
+                <p>More edge lift.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step10_conf">Confidence:</label>
+                <select id="step10_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 11 -->
+        <div class="step-recall-block">
+            <h3>Step 11: Soft Contact Lens Design Principles</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>How do BC and Diameter relate to sagittal depth (sag)?</li>
+                    <li>Impact of material drape on soft lens fit?</li>
+                    <li>Importance of OZD in soft lens design?</li>
+                    <li>How does soft lens CT vary with power (minus vs. plus)?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: To make a soft lens fit tighter, would you increase or decrease its sagittal depth?</summary>
+                <p>Increase its sagittal depth (e.g., steeper BC or larger diameter).</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step11_conf">Confidence:</label>
+                <select id="step11_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 12 -->
+        <div class="step-recall-block">
+            <h3>Step 12: Keratometry</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>What does keratometry measure (central/peripheral? anterior/posterior cornea?)?</li>
+                    <li>Define "K-readings." Units used?</li>
+                    <li>How can mire quality indicate corneal surface regularity?</li>
+                    <li>Identify WTR, ATR, and Oblique astigmatism from K-readings.</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: In WTR astigmatism, which meridian is steeper?</summary>
+                <p>The vertical meridian (or meridian closest to 90 degrees).</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step12_conf">Confidence:</label>
+                <select id="step12_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 13 -->
+        <div class="step-recall-block">
+            <h3>Step 13: Placido's Disc</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Principle of operation?</li>
+                    <li>What do regular, concentric reflected rings indicate?</li>
+                    <li>What do distorted or bunched-up rings indicate?</li>
+                    <li>Is it a qualitative or quantitative assessment? Limitations?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: Can Placido's disc measure the exact dioptric power of the cornea?</summary>
+                <p>No, it provides a qualitative assessment of surface regularity.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step13_conf">Confidence:</label>
+                <select id="step13_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 14 -->
+        <div class="step-recall-block">
+            <h3>Step 14: Corneal Topography</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Purpose? Advantage over keratometry?</li>
+                    <li>Difference between Placido-based and Scheimpflug systems?</li>
+                    <li>Describe Axial, Tangential, and Elevation maps – key use for each.</li>
+                    <li>General color scale interpretation (warm vs. cool colors).</li>
+                    <li>How can topography help detect keratoconus? (e.g., inferior steepening).</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: Which topography map is best for precisely localizing the apex of a keratoconic cone?</summary>
+                <p>Tangential (Instantaneous) Map.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step14_conf">Confidence:</label>
+                <select id="step14_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+    </div> <!-- End Phase 2 -->
+
+    <div id="phase3recall" class="phase-section">
+        <h2 class="phase-title">Phase 3 Recall: Core Fitting Process (Steps 15-25)</h2>
+
+        <!-- Step 15 -->
+        <div class="step-recall-block">
+            <h3>Step 15: Introduction to Contact Lens Fitting (General Principles)</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>What are the main goals of CL fitting (e.g., "3 C's + H")?</li>
+                    <li>Key information from patient history (lifestyle, motivation, ocular/medical Hx)?</li>
+                    <li>List 3 essential preliminary tests before trial lens selection.</li>
+                    <li>General philosophy for initial trial lens selection (soft vs. RGP)?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: Why is an accurate manifest refraction crucial before CL fitting?</summary>
+                <p>It forms the basis for the initial trial lens power selection (after vertex distance compensation if needed).</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step15_conf">Confidence:</label>
+                <select id="step15_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 16 -->
+        <div class="step-recall-block">
+            <h3>Step 16: Handling of Contact Lenses (Insertion & Removal)</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>THE single most important step before handling?</li>
+                    <li>"Taco test" for soft lenses – purpose?</li>
+                    <li>Key lid control technique for insertion?</li>
+                    <li>Describe one common soft lens removal method.</li>
+                    <li>Describe one common RGP lens removal method (e.g., scissor).</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: When teaching removal, where should a soft lens patient ideally slide the lens before pinching?</summary>
+                <p>Onto the white part of the eye (sclera).</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step16_conf">Confidence:</label>
+                <select id="step16_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 17 -->
+        <div class="step-recall-block">
+            <h3>Step 17: Fitting of Spherical Soft Contact Lenses</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>How to assess Centration (C)? Ideal?</li>
+                    <li>How to assess Coverage (C)? Ideal?</li>
+                    <li>How to assess Movement (M) (push-up, blink lag)? Ideal amount?</li>
+                    <li>Signs of a tight fit? Signs of a loose fit?</li>
+                    <li>What is over-refraction (OR)?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: Approximately how much movement (in mm) is considered ideal for a soft lens on push-up test?</summary>
+                <p>Approximately 0.2-0.5 mm.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step17_conf">Confidence:</label>
+                <select id="step17_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 18 -->
+        <div class="step-recall-block">
+            <h3>Step 18: Effects of Parameter Changes in Spherical Soft Contact Lenses</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>How does sagittal depth (sag) relate to soft lens fit?</li>
+                    <li>Steepen BC: Increases/decreases sag? Tighter/looser fit?</li>
+                    <li>Flatten BC: Increases/decreases sag? Tighter/looser fit?</li>
+                    <li>Increase Diameter: Increases/decreases sag? Tighter/looser fit?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: If a soft lens is too loose, would you choose a steeper or flatter BC for the next trial?</summary>
+                <p>Steeper BC (or larger diameter).</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step18_conf">Confidence:</label>
+                <select id="step18_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 19 -->
+        <div class="step-recall-block">
+            <h3>Step 19: Fitting Spherical RGP Contact Lenses (Low Dk materials)</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Role of fluorescein dye and cobalt blue light?</li>
+                    <li>Describe ideal apical, mid-peripheral, and peripheral fluorescein pattern for an "alignment fit."</li>
+                    <li>What does a central dark area (apical touch) indicate in fluorescein pattern?</li>
+                    <li>What does a central bright green pool (apical clearance) indicate?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: A "bull's eye" fluorescein pattern (central green pool surrounded by touch) indicates what type of fit?</summary>
+                <p>A steep fit (apical clearance).</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step19_conf">Confidence:</label>
+                <select id="step19_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 20 -->
+        <div class="step-recall-block">
+            <h3>Step 20: Fitting Spherical RGP Contact Lenses (High Dk materials)</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Primary benefit of high Dk RGP materials?</li>
+                    <li>What is material flexure? When is it a concern with high Dk RGPs?</li>
+                    <li>Potential wettability challenges with some Si-containing RGP materials?</li>
+                    <li>Are fitting principles (fluorescein assessment) different for high Dk vs. low Dk?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: How might RGP flexure affect the over-refraction?</summary>
+                <p>It can induce unpredicted or variable residual astigmatism.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step20_conf">Confidence:</label>
+                <select id="step20_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 21 -->
+        <div class="step-recall-block">
+            <h3>Step 21: Effects of RGP CL Parameter Changes on Lens Fitting</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Steepen BOZR: Tighter/looser central fit? Effect on movement?</li>
+                    <li>Flatten BOZR: Tighter/looser central fit? Effect on movement?</li>
+                    <li>Flatten PCR: More/less peripheral edge clearance?</li>
+                    <li>Increase OAD (BC same): Tighter/looser overall fit?</li>
+                    <li>Explain SAM-FAP rule (for power compensation after BC change).</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: To reduce excessive edge lift on an RGP, would you steepen or flatten the peripheral curve radius (PCR)?</summary>
+                <p>Steepen the PCR.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step21_conf">Confidence:</label>
+                <select id="step21_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 22 -->
+        <div class="step-recall-block">
+            <h3>Step 22: Understanding Astigmatism & Basic Correction Options</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Define corneal, internal/lenticular, and total astigmatism.</li>
+                    <li>What is residual astigmatism (RA) with a CL?</li>
+                    <li>How much astigmatism can a spherical soft lens typically "mask"?</li>
+                    <li>How does a spherical RGP correct corneal astigmatism?</li>
+                    <li>When is a toric CL (soft or RGP) generally indicated? (RA threshold)</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: If total astigmatism = corneal astigmatism, what is the expected RA with a spherical RGP?</summary>
+                <p>Approximately zero (or very little).</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step22_conf">Confidence:</label>
+                <select id="step22_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 23 -->
+        <div class="step-recall-block">
+            <h3>Step 23: Fitting Contact Lenses in Aphakia</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Define aphakia. Common cause?</li>
+                    <li>Main optical challenge (power range)?</li>
+                    <li>Lens design considerations due to high plus power (CT, weight, OZD)?</li>
+                    <li>What is lenticulation in an aphakic soft lens? Purpose?</li>
+                    <li>Why are high Dk materials crucial for aphakic CLs?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: Are aphakic CLs typically high plus or high minus power?</summary>
+                <p>High plus power.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step23_conf">Confidence:</label>
+                <select id="step23_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 24 -->
+        <div class="step-recall-block">
+            <h3>Step 24: Fitting Contact Lenses in Pseudophakia</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Define pseudophakia. What is an IOL?</li>
+                    <li>Common reasons for needing CLs after IOL surgery?</li>
+                    <li>How do CL powers typically compare to aphakic powers?</li>
+                    <li>Key considerations for post-IOL CL fitting (corneal condition, timing)?</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: Is CL fitting generally more complex for aphakia or pseudophakia?</summary>
+                <p>Aphakia.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step24_conf">Confidence:</label>
+                <select id="step24_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+        <!-- Step 25 -->
+        <div class="step-recall-block">
+            <h3>Step 25: Fitting in Keratoconus (Introduction)</h3>
+            <div class="recall-prompts">
+                <ul>
+                    <li>Define keratoconus (progressive, thinning, cone).</li>
+                    <li>Key symptoms and clinical signs (Vogt's striae, Munson's sign)?</li>
+                    <li>Primary optical benefit of RGPs for KC?</li>
+                    <li>Describe one basic RGP fitting goal for KC (e.g., three-point touch, apical clearance).</li>
+                    <li>Name one alternative lens type for KC besides standard RGPs.</li>
+                </ul>
+            </div>
+            <details class="self-check">
+                <summary class="self-check-summary">Self-Check: What is Fleischer's ring, and what does it indicate?</summary>
+                <p>An iron (hemosiderin) deposit at the base of the cone in keratoconus.</p>
+            </details>
+            <div class="confidence-check">
+                <label for="step25_conf">Confidence:</label>
+                <select id="step25_conf"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+        </div>
+
+    </div> <!-- End Phase 3 -->
+
+    <!-- Placeholder for Phase 4 & 5 Quick Recall Sections -->
+    <!-- You would continue the same structure for Steps 26-50 -->
+
+</div>
+
+</body>
+</html>

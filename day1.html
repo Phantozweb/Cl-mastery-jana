@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1: Corneal Anatomy & Physiology - Contact Lens Studies</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .cornell-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .cornell-header {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .cornell-main {
+            display: flex;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+        .cornell-cues {
+            flex: 1;
+            padding: 15px;
+            border-right: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        .cornell-notes {
+            flex: 3;
+            padding: 15px;
+        }
+        .cornell-summary {
+            padding: 15px;
+            border-top: 2px solid #4CAF50;
+            background-color: #e8f5e9;
+            margin-top: 0; /* To align with flexbox border */
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #3498db; /* Blue */
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #e8f5e9; /* Light green */
+        }
+        ul, ol {
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        .mnemonic {
+            background-color: #fffacd; /* LemonChiffon */
+            border-left: 5px solid #ffd700; /* Gold */
+            padding: 10px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .analogy {
+            background-color: #e0f7fa; /* Light Cyan */
+            border-left: 5px solid #00bcd4; /* Cyan */
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .key-term {
+            font-weight: bold;
+            color: #e74c3c; /* Red */
+        }
+        .cl-relevance {
+            background-color: #ffebee; /* Light Pink */
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        details {
+            background-color: #f1f8e9; /* Very light green */
+            border: 1px solid #c8e6c9; /* Lighter green border */
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            color: #388e3c; /* Darker green */
+        }
+        .study-tip {
+            background-color: #fff9c4; /* Light yellow */
+            border: 1px solid #fff176; /* Yellow border */
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+        .interactive-question {
+            margin-top: 15px;
+        }
+        .interactive-question p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cornell-container">
+    <div class="cornell-header">
+        Day 1: Corneal Anatomy, Physiology & Slit Lamp Intro
+    </div>
+    <div class="cornell-main">
+        <div class="cornell-cues">
+            <h3>Cues & Keywords</h3>
+            <p><strong>Corneal Anatomy:</strong></p>
+            <ul>
+                <li>Avascular?</li>
+                <li>Layers (ABCDE)</li>
+                <li>Epi regeneration?</li>
+                <li>Bowman's healing?</li>
+                <li>Stroma - transparency?</li>
+                <li>Endo pump function?</li>
+                <li>Innervation?</li>
+            </ul>
+            <p><strong>Corneal Physiology:</strong></p>
+            <ul>
+                <li>Transparency factors</li>
+                <li>Oxygen (O2) sources</li>
+                <li>Metabolism: Aerobic vs Anaerobic</li>
+                <li>Deturgescence</li>
+                <li>Tear film role</li>
+            </ul>
+            <p><strong>CL Interactions:</strong></p>
+            <ul>
+                <li>Hypoxia Dk/t</li>
+                <li>CO2 effects</li>
+                <li>Tear Exchange issues</li>
+                <li>Mechanical stress</li>
+                <li>Deposits</li>
+            </ul>
+            <p><strong>Slit Lamp:</strong></p>
+            <ul>
+                <li>Purpose?</li>
+                <li>Key Parts?</li>
+                <li>Diffuse Illum.</li>
+                <li>Parallelepiped</li>
+                <li>Optic Section</li>
+                <li>Retroillumination</li>
+                <li>Cobalt Blue filter</li>
+            </ul>
+            <h3>Questions to Answer:</h3>
+            <ol>
+                <li>Why is the cornea transparent?</li>
+                <li>Which corneal layer is most critical for hydration control?</li>
+                <li>What's the biggest risk of low Dk/t lenses?</li>
+                <li>How does a slit lamp help in CL practice?</li>
+            </ol>
+        </div>
+        <div class="cornell-notes">
+            <h2>Step 1: Corneal Anatomy</h2>
+            <p>The <span class="key-term">cornea</span> is the eye's transparent front window. It's <span class="key-term">avascular</span> (no blood vessels) which helps its clarity. It handles most of the eye's focusing power.</p>
+            <div class="analogy">
+                <strong>Analogy:</strong> Think of the cornea as the strong, clear windshield of a car. It needs to be perfectly clear to see through and tough enough to protect what's inside.
+            </div>
+
+            <h3>Corneal Layers (Approx. Central Thickness: 0.52mm or 520 microns)</h3>
+            <div class="mnemonic">
+                <strong>Mnemonic:</strong> <strong>A</strong>lways <strong>B</strong>ring <strong>C</strong>ornflakes, <strong>D</strong>onuts & <strong>E</strong>ggs
+                <br>(Actually, it's Epithelium, Bowman's, Stroma, Descemet's, Endothelium - so <strong>E</strong>at <strong>B</strong>ig <strong>S</strong>teaks, <strong>D</strong>rink <strong>E</strong>verything!)
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Layer</th>
+                        <th>Approx. Thickness</th>
+                        <th>Key Features</th>
+                        <th>Regeneration?</th>
+                        <th>CL Relevance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Epithelium</strong></td>
+                        <td>~50 microns (5-7 cells)</td>
+                        <td>Outer barrier, smooth surface. Tight junctions.</td>
+                        <td>Yes, rapidly (days).</td>
+                        <td><span class="cl-relevance">First contact, SPK, abrasions.</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Bowman's Layer</strong></td>
+                        <td>~8-14 microns</td>
+                        <td>Tough, acellular, collagen.</td>
+                        <td>No (scars).</td>
+                        <td><span class="cl-relevance">Permanent damage if breached.</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Stroma</strong></td>
+                        <td>~450 microns (~90%)</td>
+                        <td>Collagen lamellae (regularly arranged for transparency), keratocytes, proteoglycans. Mainly water.</td>
+                        <td>Slowly (can scar).</td>
+                        <td><span class="cl-relevance">Site of edema, infiltrates, scars.</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Descemet's Membrane</strong></td>
+                        <td>~3-12 microns (thickens with age)</td>
+                        <td>Endothelium's basement membrane. Elastic.</td>
+                        <td>Yes (by endothelium).</td>
+                        <td><span class="cl-relevance">Folds indicate edema/trauma.</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>5. Endothelium</strong></td>
+                        <td>~5 microns (single layer)</td>
+                        <td>Hexagonal cells. <span class="key-term">Na+/K+ pump</span> maintains deturgescence.</td>
+                        <td>No significant regeneration (cells spread/enlarge).</td>
+                        <td><span class="cl-relevance">CRITICAL. Hypoxia damages pump -> edema. Polymegethism.</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Innervation:</strong> Richly supplied by Trigeminal nerve (CN V1) - very sensitive!</p>
+
+            <div class="study-tip">
+                <strong>Study Tip:</strong> Draw the corneal layers. Label each and write one key function and one CL implication next to it.
+            </div>
+
+            <h2>Step 2: Corneal Physiology</h2>
+            <p>Physiology is how the cornea *works* to stay healthy and clear.</p>
+            <ul>
+                <li><strong>Transparency:</strong> Maintained by avascularity, regular stromal collagen, and <span class="key-term">deturgescence</span> (relative dehydration ~78% water).</li>
+                <li><strong>Oxygen (O2) Supply:</strong>
+                    <ul>
+                        <li>Open Eye: Atmosphere -> Tear Film -> Cornea</li>
+                        <li>Closed Eye: Palpebral conjunctival vessels & Aqueous Humor (much lower O2).</li>
+                    </ul>
+                </li>
+                <li><strong>Metabolism:</strong>
+                    <ul>
+                        <li><span class="key-term">Aerobic (with O2):</span> Preferred. Efficient energy. Epithelium & Endothelium are big O2 users.</li>
+                        <li><span class="key-term">Anaerobic (without enough O2):</span> Inefficient. Produces lactic acid -> draws water -> edema.</li>
+                    </ul>
+                </li>
+                <li><strong>Hydration Control (Deturgescence):</strong>
+                    <div class="analogy">
+                        <strong>Analogy - Endothelial Pump:</strong> Like a tiny sump pump in a basement, constantly pumping out excess water to keep the "stromal basement" from flooding (becoming edematous).
+                    </div>
+                    <ul>
+                        <li>Epithelial barrier (keeps tears out).</li>
+                        <li>Endothelial pump (pumps water into aqueous).</li>
+                    </ul>
+                </li>
+                <li><strong>Tear Film:</strong> Provides O2, nutrients, lubrication, removes waste, antimicrobial.</li>
+            </ul>
+            <div class="interactive-question">
+                <p><strong>Quick Check:</strong> What happens to corneal metabolism if oxygen supply is severely limited?</p>
+                <details>
+                    <summary>Answer</summary>
+                    <p>The cornea shifts to anaerobic metabolism, producing lactic acid. This buildup increases stromal osmolarity, drawing fluid into the stroma and causing corneal edema.</p>
+                </details>
+            </div>
+
+            <h2>Step 3: Corneal Physiology AND Contact Lens Interactions</h2>
+            <p>How does wearing a CL mess with normal corneal physiology?</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Interaction</th>
+                        <th>Cause related to CL</th>
+                        <th>Key Physiological Effect(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Hypoxia</strong> (low O2)</td>
+                        <td>Lens barrier (low <span class="key-term">Dk/t</span> = low O2 transmission)</td>
+                        <td>Edema, neovascularization, endothelial changes, anaerobic metabolism.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CO2 Buildup</strong></td>
+                        <td>Lens traps CO2</td>
+                        <td>Lowers pH, potential cell stress.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Altered Tear Exchange</strong></td>
+                        <td>Lens presence, tight fit</td>
+                        <td>Waste buildup, reduced nutrients/O2, debris under lens.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mechanical Effects</strong></td>
+                        <td>Lens rubbing, poor edge, deposits</td>
+                        <td>Abrasions, SEALs, GPC.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lens Deposits</strong> (Protein, Lipid)</td>
+                        <td>Tear film components sticking to lens</td>
+                        <td>Reduced Dk/t, discomfort, GPC, vision issues.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="analogy">
+                <strong>Analogy - CL as a Blanket:</strong> A thin, breathable blanket (high Dk/t lens) is fine. A thick, non-breathable plastic sheet (low Dk/t lens) will make you sweaty and unable to breathe well (hypoxia and edema).
+            </div>
+
+            <h2>Step 4: Introduction to Slit Lamp Biomicroscopy</h2>
+            <p>The <span class="key-term">Slit Lamp</span> is your #1 tool for examining the anterior eye. It's a stereo microscope with a controllable bright light source.</p>
+            <div class="analogy">
+                <strong>Analogy - Slit Lamp:</strong> Think of it as a detective's advanced magnifying glass with a built-in flashlight that can change shape and color. You're looking for "clues" about eye health.
+            </div>
+            <h3>Key Parts:</h3>
+            <ul>
+                <li>Observation System (binoculars, magnification)</li>
+                <li>Illumination System (light, slit controls, filters)</li>
+                <li>Mechanical System (joystick, rests)</li>
+            </ul>
+            <h3>Basic Illumination Techniques:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Technique</th>
+                        <th>Light Setup</th>
+                        <th>Primary Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Diffuse</strong></td>
+                        <td>Wide beam, diffuser</td>
+                        <td>General overview of eye & lids.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Direct Focal (Parallelepiped)</strong></td>
+                        <td>Moderately wide slit (1-2mm)</td>
+                        <td>3D view of corneal layers, lens. Look for opacities, infiltrates.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Direct Focal (Optic Section)</strong></td>
+                        <td>Very thin slit (0.1-0.2mm)</td>
+                        <td>Optical "slice" to see depth of lesions, corneal thickness.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Indirect Illumination</strong></td>
+                        <td>Focus scope next to light beam</td>
+                        <td>View subtle changes (e.g., microcysts) with scattered light.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Retroillumination</strong></td>
+                        <td>Light reflects off deeper structure (iris/fundus)</td>
+                        <td>Highlights corneal opacities, vessels, CL deposits from behind.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Specular Reflection</strong></td>
+                        <td>Angle of illumination = angle of observation</td>
+                        <td>View corneal endothelium (see cell shapes).</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Key Filter:</strong> <span class="key-term">Cobalt Blue Filter</span> - Used with sodium fluorescein (NaFl) dye to see corneal abrasions (they glow green!), assess RGP lens fit (tear pooling), and tear break-up time (TBUT).</p>
+
+            <div class="study-tip">
+                <strong>Study Tip - Slit Lamp Visualization:</strong> For each illumination technique, try to imagine what you are trying to see and why that specific light setup helps. If possible, watch videos of slit lamp exams.
+            </div>
+
+            <div class="interactive-question">
+                <p><strong>Challenge Question:</strong> You suspect a patient has subtle corneal microcysts due to chronic mild hypoxia. Which slit lamp illumination technique would be most helpful to visualize them?</p>
+                <details>
+                    <summary>Answer & Rationale</summary>
+                    <p><strong>Indirect retroillumination or high magnification direct illumination with a parallelepiped and careful focusing.</strong> Microcysts are small, refractile bodies within the epithelium. Indirect retroillumination uses light scattered from the iris or fundus to highlight these subtle, transparent structures against the darker pupil or by showing them as "reversed" illumination. Careful direct illumination might also show them if they cause slight surface irregularity or have different refractive properties.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+    <div class="cornell-summary">
+        <h3>Day 1 Summary (Fill this in after your study session!)</h3>
+        <p><em>Today I learned about the five layers of the cornea, emphasizing the importance of the epithelium's barrier function and the endothelium's pump. I understand how the cornea gets oxygen and maintains transparency, and how a contact lens can disrupt these processes (e.g., hypoxia leading to...). The slit lamp is crucial for... My key takeaways for slit lamp techniques are...</em></p>
+        <p><strong>Key Concepts I Need to Review Further:</strong></p>
+        <ul>
+            <li><em>(e.g., Endothelial cell changes with hypoxia)</em></li>
+            <li><em>(e.g., Difference between optic section and parallelepiped uses)</em></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

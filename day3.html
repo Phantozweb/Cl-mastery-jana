@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3: CL Contraindications, RGP & Soft Lens Design, Keratometry</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .cornell-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .cornell-header {
+            background-color: #FF9800; /* Orange */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .cornell-main {
+            display: flex;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+        .cornell-cues {
+            flex: 1;
+            padding: 15px;
+            border-right: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        .cornell-notes {
+            flex: 3;
+            padding: 15px;
+        }
+        .cornell-summary {
+            padding: 15px;
+            border-top: 2px solid #FF9800;
+            background-color: #fff3e0; /* Light orange */
+            margin-top: 0;
+        }
+        h1, h2, h3 {
+            color: #e65100; /* Darker Orange */
+        }
+        h2 {
+            border-bottom: 2px solid #FF9800;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #fb8c00; /* Medium Orange */
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ffe0b2; /* Lighter orange */
+        }
+        ul, ol {
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        .mnemonic {
+            background-color: #fffacd;
+            border-left: 5px solid #ffd700;
+            padding: 10px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .analogy {
+            background-color: #e0f7fa;
+            border-left: 5px solid #00bcd4;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .key-term {
+            font-weight: bold;
+            color: #d32f2f; /* Darker Red */
+        }
+        .cl-relevance {
+            background-color: #ffebee;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        details {
+            background-color: #fff8e1; /* Very light orange/yellow */
+            border: 1px solid #ffecb3; /* Lighter orange/yellow border */
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            color: #bf360c; /* Deep orange */
+        }
+        .study-tip {
+            background-color: #fff9c4;
+            border: 1px solid #fff176;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+        .important-warning {
+            background-color: #ffcdd2; /* Light red */
+            border-left: 5px solid #f44336; /* Red */
+            padding: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cornell-container">
+    <div class="cornell-header">
+        Day 3: Contraindications, Lens Design (RGP & Soft), Keratometry
+    </div>
+    <div class="cornell-main">
+        <div class="cornell-cues">
+            <h3>Cues & Keywords</h3>
+            <p><strong>Contraindications:</strong></p>
+            <ul>
+                <li>Absolute vs Relative</li>
+                <li>Active Infections?</li>
+                <li>Severe Dry Eye?</li>
+                <li>Poor Hygiene?</li>
+                <li>Systemic Diseases? (e.g., uncontrolled DM)</li>
+                <li>Allergies (solutions)</li>
+                <li>Pregnancy?</li>
+                <li>Environment?</li>
+            </ul>
+            <p><strong>RGP Design:</strong></p>
+            <ul>
+                <li>BOZR / BC</li>
+                <li>BOZD / OZD</li>
+                <li>Peripheral Curves (PCW, PCR)</li>
+                <li>Edge Lift / Clearance</li>
+                <li>Center Thickness (CT)</li>
+                <li>Spherical vs Aspheric</li>
+                <li>Lenticulation</li>
+            </ul>
+            <p><strong>Soft Lens Design:</strong></p>
+            <ul>
+                <li>BC, Diameter</li>
+                <li>Sagittal Depth (Sag)</li>
+                <li>Material Drape</li>
+                <li>CT (power dependent)</li>
+                <li>Edge Design</li>
+            </ul>
+            <p><strong>Keratometry:</strong></p>
+            <ul>
+                <li>What does it measure?</li>
+                <li>"K-readings"</li>
+                <li>Units (mm radius / Diopters)</li>
+                <li>Mires - clarity? distortion?</li>
+                <li>Regular vs Irregular Astigmatism</li>
+                <li>With-the-rule (WTR)</li>
+                <li>Against-the-rule (ATR)</li>
+                <li>Oblique Astigmatism</li>
+            </ul>
+            <h3>Questions to Answer:</h3>
+            <ol>
+                <li>Name 3 absolute contraindications to CL wear.</li>
+                <li>What is the main purpose of peripheral curves on an RGP lens?</li>
+                <li>How does material drape affect soft lens fitting?</li>
+                <li>If K-readings are 43.00 @ 180 / 45.00 @ 090, what type of astigmatism is this?</li>
+            </ol>
+        </div>
+        <div class="cornell-notes">
+            <div class="important-warning">
+                <strong>Patient Safety First!</strong> Understanding when NOT to fit contact lenses is as important, if not more so, than knowing how to fit them.
+            </div>
+
+            <h2>Step 9: Contraindications for Contact Lens Wear</h2>
+            <p>These are reasons why a patient should <span class="key-term">NOT</span> wear contact lenses, either temporarily or permanently.</p>
+            <h3>Categories:</h3>
+            <ul>
+                <li><strong>Absolute Contraindications:</strong> Conditions where CL wear is generally <span class="key-term">never advisable</span> due to high risk of serious complications.</li>
+                <li><strong>Relative Contraindications:</strong> Conditions where CL wear <span class="key-term">may be possible</span> with careful management, special lens types, or once the condition resolves. Risk vs. benefit must be carefully weighed.</li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Condition/Factor</th>
+                        <th>Type (Absolute/Relative)</th>
+                        <th>Reasoning / CL Relevance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Active ocular infection/inflammation</strong> (e.g., keratitis, uveitis, severe conjunctivitis)</td>
+                        <td>Absolute</td>
+                        <td>High risk of worsening infection, corneal damage.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Severe Dry Eye Disease (DED)</strong> unresponsive to treatment</td>
+                        <td>Absolute to Relative (depends on severity & lens type)</td>
+                        <td>Extreme discomfort, corneal damage, lens intolerance. Specialty lenses might be an option in some managed cases.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Poor hygiene / Non-compliance</strong> (demonstrated)</td>
+                        <td>Absolute (if unchangeable) to Relative (if can be educated)</td>
+                        <td>High risk of infection and inflammatory complications. <span class="cl-relevance">A major cause of CL problems!</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Allergies</strong> to lens materials or care solutions</td>
+                        <td>Absolute (for that specific material/solution)</td>
+                        <td>Causes significant irritation, inflammation. May need to switch lens type or care system.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Inability to handle lenses</strong> (physical or cognitive)</td>
+                        <td>Absolute to Relative (depends on support available)</td>
+                        <td>Risk of injury, lens loss, improper care.</td>
+                    </tr>
+                    <tr>
+                        <td>Certain <strong>Systemic Diseases</strong> (uncontrolled)</td>
+                        <td>Relative (often)</td>
+                        <td>E.g., Uncontrolled Diabetes (poor healing, corneal changes), Autoimmune diseases (Sjogren's - severe DED, Rheumatoid Arthritis). Requires careful co-management.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pregnancy / Hormonal Changes</strong></td>
+                        <td>Relative</td>
+                        <td>Can cause changes in corneal curvature, tear film, dry eye. Refit may be needed post-partum.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adverse Environmental Conditions</strong> (dusty, chemical fumes)</td>
+                        <td>Relative</td>
+                        <td>Increased lens deposits, irritation, risk. May require specific lens types or limit wear.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chronic Blepharitis / Meibomian Gland Dysfunction (MGD)</strong></td>
+                        <td>Relative</td>
+                        <td>Poor tear film quality, deposits, discomfort. Needs to be managed before/during CL wear.</td>
+                    </tr>
+                     <tr>
+                        <td><strong>Corneal Hypoesthesia</strong> (reduced corneal sensitivity)</td>
+                        <td>Relative to Absolute</td>
+                        <td>Patient may not feel early signs of problems (e.g., abrasion, ulcer), leading to delayed treatment.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="study-tip">
+                <strong>Study Tip - Case Scenarios:</strong> Think of a patient presenting with one of these conditions. What questions would you ask? What would your advice be regarding CLs?
+            </div>
+
+            <h2>Step 10: Rigid Gas Permeable (RGP) Contact Lens Design Principles</h2>
+            <p>RGP lenses are custom-designed for each eye based on corneal shape and refractive error.</p>
+            <div class="analogy">
+                <strong>Analogy - RGP Design:</strong> Imagine a tiny, precisely shaped "custom bowl" that needs to sit perfectly centered and move just right on the "hill" of the cornea, allowing a thin layer of "water" (tears) underneath for comfort and optical correction.
+            </div>
+            <h3>Key RGP Design Parameters:</h3>
+            <ul>
+                <li><span class="key-term">Back Optic Zone Radius (BOZR) / Base Curve (BC):</span> The primary curve on the back surface. Chosen based on corneal curvature (K-readings). Determines the basic "fit" (alignment, steep, flat).</li>
+                <li><span class="key-term">Back Optic Zone Diameter (BOZD) / Optic Zone Diameter (OZD):</span> The size of the central BOZR area. Must cover the pupil.</li>
+                <li><span class="key-term">Peripheral Curve System:</span>
+                    <ul>
+                        <li>RGPs have multiple, progressively flatter curves towards the edge (e.g., 1st PC, 2nd PC, 3rd PC).</li>
+                        <li>Each has a <span class="key-term">Peripheral Curve Radius (PCR)</span> and <span class="key-term">Peripheral Curve Width (PCW)</span>.</li>
+                        <li><strong>Purpose:</strong> To allow the lens to align with the flattening peripheral cornea, promote tear exchange, and provide adequate <span class="key-term">edge lift/clearance</span> so the edge doesn't dig into the cornea.</li>
+                    </ul>
+                </li>
+                <li><strong>Overall Diameter (OAD):</strong> Total lens size. Influences centration and lid interaction.</li>
+                <li><strong>Center Thickness (CT):</strong> Influenced by lens power (minus lenses thinner centrally, plus lenses thicker) and material. Affects Dk/t and lens flexure.</li>
+                <li><strong>Edge Design:</strong> Shape and thickness of the very edge. Critical for comfort and lid interaction.</li>
+                <li><strong>Spherical vs. Aspheric Designs:</strong>
+                    <ul>
+                        <li><span class="key-term">Spherical:</span> BOZR is a single radius of curvature.</li>
+                        <li><span class="key-term">Aspheric:</span> BOZR gradually flattens from center to periphery (eccentricity). Can improve fit on some corneas, potentially reduce spherical aberration.</li>
+                    </ul>
+                </li>
+                <li><strong>Lenticulation (for high power lenses):</strong> Modifying the anterior peripheral lens surface to reduce thickness and mass, improving comfort and centration (e.g., "minus carrier" for high plus lenses).</li>
+            </ul>
+            <div class="important-concept">
+                <strong>RGP Fitting Goal:</strong> To achieve good centration, adequate movement (0.5-1.5mm on blink), good tear exchange (seen with fluorescein), patient comfort, and clear vision.
+            </div>
+
+            <h2>Step 11: Soft Contact Lens Design Principles</h2>
+            <p>Soft lenses are generally more "off-the-shelf" but design still matters for fit and performance.</p>
+            <div class="analogy">
+                <strong>Analogy - Soft Lens Design:</strong> Like choosing the right size and shape of a "flexible t-shirt" for your body. It needs to drape well without being too tight or too loose.
+            </div>
+            <h3>Key Soft Lens Design Considerations:</h3>
+            <ul>
+                <li><span class="key-term">Base Curve (BC) & Diameter (Dia):</span>
+                    <ul>
+                        <li>Fewer BC/Dia options available compared to RGPs.</li>
+                        <li>The combination of BC and Dia determines the <span class="key-term">sagittal depth (sag)</span> of the lens – how much it "vaults." This is a key factor in soft lens fitting.</li>
+                        <li><span class="cl-relevance">A lens with a steeper BC and/or larger diameter will generally have a greater sagittal depth and fit tighter.</span></li>
+                    </ul>
+                </li>
+                <li><span class="key-term">Material Drape:</span> How the lens material conforms to the shape of the cornea. Stiffer materials (higher modulus) drape less.</li>
+                <li><strong>Center Thickness (CT):</strong> Varies with power. Affects Dk/t and handling.</li>
+                <li><strong>Edge Design:</strong> Tapered or rounded edges for comfort and to minimize lid interaction.</li>
+                <li><strong>Optic Zone Diameter (OZD):</strong> Needs to be large enough to cover the pupil in various lighting.</li>
+                <li><strong>Aspheric Optics:</strong> Many modern soft lenses use aspheric front surfaces to reduce spherical aberration and potentially improve vision quality.</li>
+            </ul>
+            <div class="important-concept">
+                <strong>Soft Lens Fitting Goals:</strong> Good centration, adequate movement (0.2-0.5mm on blink is typical, more subtle than RGP), full corneal coverage, patient comfort, and clear, stable vision. Over-refraction is key.
+            </div>
+
+            <h2>Step 12: Keratometry</h2>
+            <p>Keratometry is a measurement of the curvature of the <span class="key-term">anterior central cornea</span> (approx. central 3mm) in its two principal meridians.</p>
+            <div class="analogy">
+                <strong>Analogy - Keratometer:</strong> Like a specialized ruler that measures how "curved" or "flat" the very front of your eye's windshield is, and whether it's more curved in one direction than another (like a football vs. a basketball).
+            </div>
+            <h3>What it Tells Us ("K-readings"):</h3>
+            <ul>
+                <li><strong>Corneal Curvature:</strong>
+                    <ul>
+                        <li>Expressed in <span class="key-term">millimeters (mm) of radius</span> (e.g., 7.80 mm) - smaller mm = steeper curve.</li>
+                        <li>OR in <span class="key-term">Diopters (D)</span> (e.g., 43.25 D) - higher Diopters = steeper curve. (Uses a refractive index of ~1.3375 to convert).</li>
+                    </ul>
+                </li>
+                <li><strong>Corneal Astigmatism:</strong> The difference in curvature between the two principal meridians.
+                    <ul>
+                        <li>Example: 43.00 D @ 180 / 45.00 D @ 090. This cornea has 2.00 D of astigmatism.</li>
+                    </ul>
+                </li>
+                <li><strong>Orientation of Principal Meridians:</strong> The axes of the flattest and steepest curves (e.g., @180, @090).</li>
+                <li><strong>Quality of Mires:</strong> The reflected images from the keratometer.
+                    <ul>
+                        <li><span class="key-term">Clear and regular mires:</span> Indicate a smooth, regular corneal surface.</li>
+                        <li><span class="key-term">Distorted, irregular, or "scissoring" mires:</span> Suggest an irregular corneal surface (e.g., keratoconus, dry eye, corneal warpage). <span class="cl-relevance">This is a very important qualitative finding!</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Types of Corneal Astigmatism (based on K's):</h3>
+            <ul>
+                <li><strong>With-the-Rule (WTR):</strong> Vertical meridian is steeper (e.g., 42.00 @ 180 / 44.00 @ 090). Common in younger people.</li>
+                <li><strong>Against-the-Rule (ATR):</strong> Horizontal meridian is steeper (e.g., 44.00 @ 180 / 42.00 @ 090). More common with age.</li>
+                <li><strong>Oblique Astigmatism:</strong> Principal meridians are not close to 90/180 (e.g., 43.00 @ 045 / 45.00 @ 135).</li>
+            </ul>
+            <div class="mnemonic">
+                <strong>Astigmatism Rule:</strong> "The steeper meridian is closer to the axis of the MINUS cylinder in glasses." (This helps link K's to spectacle Rx).
+            </div>
+            <div class="study-tip">
+                <strong>Study Tip - Practice K's:</strong> If you have example K-readings, practice identifying the amount and type of astigmatism. Try to visualize what the mires might look like for regular vs. irregular astigmatism.
+            </div>
+             <div class="interactive-question">
+                <p><strong>Keratometry Challenge:</strong> K-readings are: 7.50mm @ 010 / 7.20mm @ 100.
+                <br>1. Which meridian is steeper?
+                <br>2. What is the approximate dioptric difference (corneal astigmatism)? (Assume an average K of ~44D for conversion if needed for rough estimate, or use a converter if you have one).
+                <br>3. What type of astigmatism is this likely to be considering the axes?</p>
+                <details>
+                    <summary>Answer & Rationale</summary>
+                    <p>1. The meridian with the <span class="key-term">smaller mm radius</span> is steeper. So, 7.20mm @ 100 is steeper.
+                    <br>2. To estimate dioptric difference:
+                        <ul>
+                            <li>Power (D) = 337.5 / radius (mm)</li>
+                            <li>Flat meridian (7.50mm): 337.5 / 7.50 = 45.00 D</li>
+                            <li>Steep meridian (7.20mm): 337.5 / 7.20 = 46.875 D (approx 46.88 D)</li>
+                            <li>Corneal Astigmatism: 46.88 D - 45.00 D = <span class="key-term">1.88 D</span>.</li>
+                        </ul>
+                    <br>3. The principal meridians (010 and 100) are roughly 90 degrees apart but are not close to horizontal/vertical. This is <span class="key-term">Oblique Astigmatism</span>. The steeper meridian is at 100 degrees.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </div>
+    <div class="cornell-summary">
+        <h3>Day 3 Summary (Fill this in after your study session!)</h3>
+        <p><em>Today focused on patient safety with contraindications – active infections are an absolute no-go. For RGP design, the BOZR and peripheral curve system are key for fit and tear exchange. Soft lens design relies heavily on BC/Diameter to achieve appropriate sagittal depth and material drape. Keratometry provides crucial info on central corneal curvature and astigmatism, with mire quality indicating surface regularity. For example, WTR astigmatism means...</em></p>
+        <p><strong>Key Concepts I Need to Review Further:</strong></p>
+        <ul>
+            <li><em>(e.g., Specific systemic diseases and their CL implications)</em></li>
+            <li><em>(e.g., How aspheric designs differ in RGP vs Soft lenses)</em></li>
+            <li><em>(e.g., Converting mm to Diopters accurately for K's)</em></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

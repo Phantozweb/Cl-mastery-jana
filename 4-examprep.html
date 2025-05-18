@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Quick Recall Notes: Steps 30-33</title>
+    <style>
+        body {
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5; /* Lighter, softer background */
+            color: #333a45;
+        }
+        .main-container {
+            max-width: 950px;
+            margin: 25px auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .main-header {
+            background: linear-gradient(135deg, #E91E63 0%, #AD1457 100%); /* Pink/Deep Pink gradient for Phase 4 */
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            letter-spacing: 1px;
+        }
+        .phase-title { /* For potential Phase 5 title if needed later */
+            font-size: 1.6em;
+            color: #c2185b; /* Darker Pink */
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #c2185b;
+            text-align: center;
+        }
+        .step-container {
+            padding: 20px 25px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        .step-container:last-child {
+            border-bottom: none;
+        }
+        .step-title {
+            font-size: 1.6em;
+            color: #AD1457; /* Deep Pink */
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .step-section-title {
+            font-size: 1.1em;
+            color: #4A5568; /* Dark grey */
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            border-left: 4px solid #E91E63; /* Pink accent */
+            padding-left: 8px;
+        }
+        .keywords span {
+            display: inline-block;
+            background-color: #fce4ec; /* Light pink for keywords */
+            color: #c2185b; /* Darker pink text */
+            padding: 3px 8px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        ul, ol {
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        table.recall-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        .recall-table th, .recall-table td {
+            border: 1px solid #f48fb1; /* Lighter pink border */
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .recall-table th {
+            background-color: #f8bbd0; /* Lighter Pink */
+            font-weight: bold;
+            color: #c2185b; /* Darker Pink */
+        }
+        .layman-analogy, .mnemonic-box {
+            background-color: #fffadf; /* Light yellow */
+            border: 1px dashed #f0c000; /* Dashed yellow border */
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-style: italic;
+        }
+        .layman-analogy strong, .mnemonic-box strong {
+            font-style: normal;
+            color: #b8860b; /* Dark yellow */
+        }
+        .mini-summary {
+            background-color: #e0f2f1; /* Light teal (contrast) */
+            border-left: 5px solid #009688; /* Teal */
+            padding: 12px;
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+        details.self-check-detailed {
+            background-color: #fff3e0; /* Light orange/peach for self-check */
+            border: 1px solid #ffe0b2;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+        summary.self-check-summary-detailed {
+            font-weight: bold;
+            cursor: pointer;
+            color: #e65100; /* Dark Orange for self-check summary */
+            padding: 5px 0;
+        }
+        details.self-check-detailed p {
+            font-weight: normal;
+            color: #333;
+            margin-top: 10px;
+        }
+        .confidence-rating {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #e8e8e8;
+            text-align: right;
+        }
+        .confidence-rating label {
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 0.9em;
+        }
+        .confidence-rating select {
+            padding: 6px 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .important-warning, .critical-point { /* Shared style for warnings */
+            background-color: #ffebee; /* Light red */
+            border-left: 5px solid #c62828; /* Dark Red */
+            padding: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .complication-box { /* From Day 10 notes, useful for Steps 39, 40 */
+            border: 1px solid #d32f2f;
+            background-color: #ffebee;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .complication-box h4 {
+            margin-top: 0;
+            color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="main-header">
+        Detailed Quick Recall Notes: Contact Lens Steps 30-40
+    </div>
+
+    <!-- Step 30: Cosmetic Contact Lenses -->
+    <div class="step-container">
+        <h2 class="step-title">Step 30: Cosmetic Contact Lenses</h2>
+        <div class="keywords">
+            <span>Opaque Lenses</span> <span>Enhancer Tints</span> <span>Pupil Size</span> <span>Centration</span> <span>Dk/t Concerns</span> <span>Illegal Sales</span> <span>Medical Device</span>
+        </div>
+        <h3 class="step-section-title">Types & Motivations:</h3>
+        <ul>
+            <li><span class="keywords"><span>Opaque Lenses:</span></span> Non-transparent colored pattern to completely change eye color (e.g., brown to blue). Have a clear central pupil zone.</li>
+            <li><span class="keywords"><span>Enhancer Tints:</span></span> Translucent tint to subtly enhance existing eye color.</li>
+            <li><strong>Motivations:</strong> Fashion, novelty, theatrical, prosthetic (masking defects).</li>
+        </ul>
+        <h3 class="step-section-title">Key Fitting Considerations:</h3>
+        <table class="recall-table">
+            <thead><tr><th>Consideration</th><th>Importance</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Proper Fit (C,C,M)</strong></td><td>Essential, as they are still medical devices. Standard soft lens fitting principles apply.</td></tr>
+                <tr><td><strong>Pupil Size Matching</strong></td><td>Clear optic zone of opaque lens must cover patient's physiological pupil in various lighting to avoid visual obstruction by the colored portion.</td></tr>
+                <tr><td><strong>Centration</strong></td><td>Critical for opaque lenses. Decentration → unnatural look, iris pattern misalignment, visual interference.</td></tr>
+                <tr><td><strong>Color/Pattern Choice</strong></td><td>Subjective, patient preference. ECP advises on natural appearance and visual impact.</td></tr>
+                <tr><td><strong>Material & Dk/t</strong></td><td>Many are older hydrogels with lower Dk/t. Pigments can further reduce O2 transmission. Counsel on appropriate wear times.</td></tr>
+            </tbody>
+        </table>
+        <div class="important-warning">
+            <strong>Risks of Improperly Fitted/Illegal Cosmetic Lenses:</strong> Corneal abrasions, infections (Microbial Keratitis), hypoxia, allergic reactions. Often sold without prescription/fitting. <span style="text-decoration: underline;">ALL CLs are medical devices requiring professional fitting.</span>
+        </div>
+        <div class="layman-analogy">
+            <strong>Analogy - Cosmetic CLs like Fashionable Sunglasses with a Clear Center:</strong>
+            "Imagine sunglasses that only have color around the edges, with a clear hole in the middle to see through. If the clear hole (<span class="keywords"><span>optic zone</span></span>) is too small or doesn't stay centered over your pupil, you'll be looking through the colored part, and your vision will be weird or blocked. Plus, they still need to fit comfortably and safely on your 'face' (eye)."
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Cosmetic CLs must be fitted by an ECP like any other medical device to ensure proper fit, adequate pupil coverage, and minimize risks. Patient education on risks of non-prescribed lenses is vital.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: A patient wants opaque blue cosmetic lenses over their dark brown eyes. What is a key measurement you need to consider regarding the lens design to ensure good vision?</summary>
+            <p>You need to consider the <span class="keywords"><span>diameter of the clear central optic zone (pupil aperture)</span></span> of the opaque blue lens. It must be large enough to accommodate the patient's maximum physiological pupil diameter (especially in dim lighting) to prevent the colored, opaque part of the lens from encroaching into their line of sight and causing visual disturbances or tunnel vision.</p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step30_conf_detailed">Confidence:</label>
+            <select id="step30_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- Step 31: Fitting Contact Lenses in Children -->
+    <div class="step-container">
+        <h2 class="step-title">Step 31: Fitting Contact Lenses in Children</h2>
+        <div class="keywords">
+            <span>Pediatric Aphakia</span> <span>Anisometropia</span> <span>Myopia Control</span> <span>Parental Involvement</span> <span>Daily Disposables</span> <span>Handling</span> <span>Compliance</span>
+        </div>
+        <h3 class="step-section-title">Common Indications:</h3>
+        <ul>
+            <li><strong>Optical Correction:</strong> <span class="keywords"><span>Pediatric Aphakia</span></span> (post-cataract surgery), high <span class="keywords"><span>Anisometropia</span></span>, high Myopia/Hyperopia.</li>
+            <li><span class="keywords"><span>Myopia Control:</span></span> Specialized soft multifocal or orthokeratology lenses to slow myopia progression (a major growing area).</li>
+            <li>Amblyopia treatment (occlusion/penalization).</li>
+            <li>Therapeutic/Prosthetic.</li>
+        </ul>
+        <h3 class="step-section-title">Key Considerations:</h3>
+        <table class="recall-table">
+            <thead><tr><th>Factor</th><th>Details & Importance</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Age & Maturity</strong></td><td>No strict age limit; depends on child's maturity, motivation, ability to cooperate, and specific need. Infants are fitted for aphakia.</td></tr>
+                <tr><td><strong style="color:red;">Parental Involvement & Motivation</strong></td><td>CRUCIAL. Parents are primary caregivers for I&R and hygiene, especially for younger children. Must be committed, competent, and understand responsibilities.</td></tr>
+                <tr><td><strong>Child's Motivation</strong></td><td>Older children need to *want* to wear lenses for better compliance and success.</td></tr>
+                <tr><td><strong>Lens Selection</strong></td><td>
+                    <ul>
+                        <li><span class="keywords"><span>Daily Disposables (DDs):</span></span> Often ideal – best hygiene, no solutions, convenience, good for intermittent/sports wear, allergies.</li>
+                        <li>Silicone Hydrogels (SiHy): Preferred for higher O2 if frequent replacement or extended wear (aphakia) is needed.</li>
+                        <li>RGPs: Excellent optics, durable. Used for aphakia, high astigmatism, KC, Ortho-K.</li>
+                    </ul>
+                </td></tr>
+                <tr><td><strong>Handling Challenges</strong></td><td>Smaller eyes/apertures, fear/anxiety. Requires patience, positive reinforcement, specialized I&R techniques (ECP & parent).</td></tr>
+                <tr><td><strong>Follow-up Schedule</strong></td><td>Typically more frequent than adults, especially initially, to monitor health, compliance, lens fit, and rapid refractive changes.</td></tr>
+                <tr><td><strong>Communication</strong></td><td>Age-appropriate for child; detailed for parents. Address concerns of both.</td></tr>
+            </tbody>
+        </table>
+        <div class="layman-analogy">
+            <strong>Analogy - Fitting CLs in Children like Teaching a Child to Ride a Bike with Training Wheels:</strong>
+            "The <span class="keywords"><span>ECP</span></span> is the bike expert. The <span class="keywords"><span>Parents</span></span> are the primary coaches holding the bike steady and ensuring safety gear (hygiene). The <span class="keywords"><span>Child</span></span> needs to be willing to try. You start with very stable 'training wheels' (<span class="keywords"><span>DDs</span></span> are like this – easy, safe). As they get older and more skilled, they might graduate to a 'bike without training wheels but needing regular maintenance' (reusable lenses)."
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Fitting children requires a team approach (ECP, parents, child), careful lens selection prioritizing safety and ease of use (like DDs), and robust support for handling and compliance. Myopia control is a significant and expanding indication.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: For a 10-year-old active in sports who needs their first contact lens correction for moderate myopia, what lens modality would generally be a strong first consideration and why?</summary>
+            <p><span class="keywords"><span>Daily Disposable (DD) soft lenses</span></span> would generally be a strong first consideration.
+            <strong>Why:</strong>
+            <ol>
+                <li><strong>Hygiene:</strong> Highest level, minimizing risk of infection as a fresh lens is used daily, and no cleaning solutions or cases are involved.</li>
+                <li><strong>Convenience:</strong> Easy for a child and parents to manage, especially with busy sports schedules.</li>
+                <li><strong>Reduced Complications:</strong> Lower risk of solution sensitivities, GPC, or deposit-related issues.</li>
+                <li><strong>Good for Intermittent Wear:</strong> Can be worn just for sports days if not needed full-time.</li>
+                <li><strong>Safety:</strong> If a lens is lost or damaged during sports, it's easily replaced without major cost or hygiene concerns.</li>
+            </ol>
+            </p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step31_conf_detailed">Confidence:</label>
+            <select id="step31_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- Step 32: Toric Contact Lenses (Soft & RGP) -->
+    <div class="step-container">
+        <h2 class="step-title">Step 32: Toric Contact Lenses (Soft & RGP)</h2>
+        <div class="keywords">
+            <span>Astigmatism Correction</span> <span>Rotational Stability</span> <span>Prism Ballast</span> <span>Dynamic Stabilization</span> <span>LARS Rule</span> <span>Front Surface Toric (FST)</span> <span>Back Surface Toric (BST)</span> <span>Bitoric (BiT)</span>
+        </div>
+        <h3 class="step-section-title">When are Toric CLs Indicated?</h3>
+        <ul>
+            <li>When significant astigmatism remains uncorrected by spherical lenses, causing unsatisfactory vision.</li>
+            <li>Typically, if <span class="keywords"><span>Residual Astigmatism (RA)</span></span> with a spherical CL is <span class="keywords"><span>>0.75D to 1.00D</span></span>.</li>
+        </ul>
+        <h3 class="step-section-title">Soft Toric Contact Lenses:</h3>
+        <div class="keywords"><span>Stabilization Methods</span></div>
+        <p>Key challenge: <span class="keywords"><span>Rotational Stability</span></span> – lens must orient correctly and consistently.</p>
+        <ul>
+            <li><strong>Common Stabilization Designs:</strong>
+                <ul>
+                    <li><span class="keywords"><span>Prism Ballast:</span></span> Lens thicker at bottom (base-down prism); gravity & lid forces orient it. (Watermelon seed principle).</li>
+                    <li><strong>Peri-Ballast:</strong> Prism only in peripheral carrier zone.</li>
+                    <li><span class="keywords"><span>Dynamic Stabilization (Thin Zones / Double Slab-Off):</span></span> Thinner zones at superior and inferior lens portions, thicker horizontally. Lid pressure during blinks orients and stabilizes. Very common.</li>
+                    <li><strong>Truncation:</strong> Bottom edge flattened (rare in modern soft torics, more common in older RGPs).</li>
+                </ul>
+            </li>
+            <li><strong>Assessing Fit & Orientation:</strong>
+                <ul>
+                    <li>Standard soft lens fit (C,C,M).</li>
+                    <li>Check <span class="keywords"><span>orientation markings</span></span> (lines/dots, usually at 3, 6, 9 o'clock or just 6). Note rotation amount & direction (from ECP's view). Ideal: stable, ≤5-10°.</li>
+                    <li><span class="keywords"><span>LARS Rule</span></span> for Over-Refraction Axis Compensation: <strong>L</strong>eft (rotation) <strong>A</strong>dd (to spectacle axis), <strong>R</strong>ight (rotation) <strong>S</strong>ubtract.</li>
+                    <li>Assess visual stability with blinks.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 class="step-section-title">RGP Toric Contact Lenses:</h3>
+        <p>Used when spherical RGPs leave significant RA (i.e., internal/lenticular astigmatism is >0.75-1.00D), OR for high corneal toricity where spherical RGPs are unstable.</p>
+        <table class="recall-table">
+            <thead><tr><th>RGP Toric Type</th><th>Key Design</th><th>Primary Indication</th><th>Stabilization</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><strong>Front Surface Toric (FST)</strong></td>
+                    <td>Spherical back, <span class="keywords"><span>toric front surface</span></span>.</td>
+                    <td>Internal/lenticular astigmatism with low/no corneal astigmatism (spherical RGP fits well but RA remains).</td>
+                    <td>Requires prism ballast or truncation (like soft torics).</td>
+                </tr>
+                <tr>
+                    <td><strong>Back Surface Toric (BST)</strong></td>
+                    <td><span class="keywords"><span>Toric back surface</span></span> (to align with toric cornea), spherical front.</td>
+                    <td>High corneal astigmatism (e.g., >2.00-2.50D) where spherical RGP is unstable or flexes.</td>
+                    <td>Achieved by back surface alignment with cornea ("saddle fit"). May induce some astigmatism.</td>
+                </tr>
+                <tr>
+                    <td><span class="keywords"><span>Bitoric (BiT)</span></span></td>
+                    <td><span class="keywords"><span>Toric back surface AND toric front surface.</span></span></td>
+                    <td>High corneal astigmatism WITH significant internal/lenticular astigmatism. "Gold standard" for complex cases.</td>
+                    <td>Excellent stability from back surface alignment. Front surface corrects total astigmatism.
+                        <br><em>SPE (Spherical Power Effect):</em> Common design.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="layman-analogy">
+            <strong>Analogy - Toric CLs like Keys for Special Locks:</strong>
+            "If your eye's 'lock' (astigmatism) is a simple round hole, a spherical 'key' (CL) works. If the lock is a special shape (oval/astigmatic), you need a specially shaped 'toric key.'
+            <ul>
+                <li><span class="keywords"><span>Soft Torics:</span></span> Are like slightly weighted keys that try to always fall into the lock the right way up (<span class="keywords"><span>stabilization</span></span>).</li>
+                <li><span class="keywords"><span>RGP Torics:</span></span>
+                    <ul>
+                        <li>FST: Key is round on the inside, specially shaped on the outside.</li>
+                        <li>BST: Key is specially shaped on the inside to fit the lock, round outside.</li>
+                        <li>Bitoric: Key is specially shaped on both inside AND outside for the trickiest locks!</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Toric CLs are essential for correcting significant astigmatism. Soft torics rely on stabilization mechanisms, while RGP torics use different surface toricities to manage corneal and internal astigmatism for optimal fit and vision.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: A patient has 3.00D of corneal astigmatism and 0.50D of internal astigmatism. What type of RGP lens would likely provide the best fit and vision?</summary>
+            <p>A <span class="keywords"><span>Back Surface Toric (BST) RGP</span></span> or a <span class="keywords"><span>Bitoric (BiT) RGP</span></span> would be considered.
+            <ul>
+                <li>A BST RGP would align well with the 3.00D toric cornea, improving stability. The tear lens with a spherical front surface would correct much of the corneal astigmatism. The remaining 0.50D of internal astigmatism might be acceptable, or if not, a Bitoric lens would be needed.</li>
+                <li>A Bitoric RGP would be the most precise, allowing the back surface to perfectly align with the 3.00D corneal toricity and the front surface to independently correct the total refractive astigmatism (corneal + internal). Given the high corneal toricity, this is often the preferred approach for optimal stability and vision.</li>
+            </ul>
+            A spherical RGP would likely rock excessively or decenter on such a toric cornea.
+            </p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step32_conf_detailed">Confidence:</label>
+            <select id="step32_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- Step 33: Bifocal and Multifocal Contact Lenses -->
+    <div class="step-container">
+        <h2 class="step-title">Step 33: Bifocal and Multifocal Contact Lenses</h2>
+        <div class="keywords">
+            <span>Presbyopia</span> <span>Simultaneous Vision</span> <span>Alternating Vision (Translating)</span> <span>Aspheric Design</span> <span>Concentric Design</span> <span>Patient Selection</span> <span>Monovision</span>
+        </div>
+        <h3 class="step-section-title">Purpose: Correction of <span class="keywords"><span>Presbyopia</span></span></h3>
+        <h3 class="step-section-title">Key Design Principles:</h3>
+        <table class="recall-table">
+            <thead><tr><th>Design Principle</th><th>Description</th><th>Common Lens Types</th><th>Mechanism</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><span class="keywords"><span>Simultaneous Vision</span></span></td>
+                    <td>Different optical zones for distance, intermediate, and/or near power are presented to the pupil simultaneously. Brain learns to selectively attend to the focused image.</td>
+                    <td>Most Soft Multifocals, some RGP Multifocals.</td>
+                    <td>
+                        <ul>
+                            <li><span class="keywords"><span>Aspheric:</span></span> Gradual power change from center to periphery (Center-Near or Center-Distance).</li>
+                            <li><span class="keywords"><span>Concentric/Annular:</span></span> Alternating rings of distance and near power (Center-Near or Center-Distance).</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="keywords"><span>Alternating Vision (Translating)</span></span></td>
+                    <td>Distinct distance (usually upper) and near (usually lower) segments in the lens, like spectacle bifocals.</td>
+                    <td>Primarily RGP Bifocals/Multifocals.</td>
+                    <td>Lens must <span class="keywords"><span>translate (move upwards)</span></span> on downgaze so pupil views through near segment. Requires prism ballast & often truncation for proper movement and orientation. Dependent on lower lid interaction.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="step-section-title">Patient Selection & Fitting Considerations:</h3>
+        <ul>
+            <li><strong style="color:red;">High Patient Motivation:</strong> Essential for adaptation.</li>
+            <li><strong>Realistic Expectations:</strong> Vision may not be as "perfect" as with single vision correction. Some glare, halos, or ghosting can occur, especially initially. Not everyone is a successful wearer.</li>
+            <li><strong>Refractive Error:</strong> Consider amount of astigmatism (toric multifocals exist but are more complex). Assess dominant eye.</li>
+            <li><strong>Pupil Size:</strong> Particularly important for simultaneous vision designs, as it influences which zones are utilized.</li>
+            <li><strong>Lifestyle & Visual Demands:</strong> Critical near tasks? Driving at night?</li>
+            <li><strong>Fitting:</strong> Follow manufacturer's guides. Assess centration, movement. Crucially, evaluate VA at <span class="keywords"><span>distance, intermediate, AND near</span></span> in real-world lighting. Multiple trials often needed.</li>
+            <li><strong>Alternative - <span class="keywords"><span>Monovision:</span></span></strong> Correcting one eye for distance, the other for near with single vision CLs. Simpler fit, but compromises binocularity and depth perception.</li>
+        </ul>
+        <div class="layman-analogy">
+            <strong>Analogy - Multifocal CLs like Special Glasses:</strong>
+            <ul>
+                <li><span class="keywords"><span>Simultaneous Vision:</span></span> "Like glasses where different parts of the lens have different powers all at once. Your brain is smart and picks the clearest image for what you're trying to see, like auto-focus."</li>
+                <li><span class="keywords"><span>Translating RGP:</span></span> "More like traditional bifocal glasses made tiny. When you look down to read, the 'reading part' of the lens slides up in front of your pupil."</li>
+            </ul>
+        </div>
+        <div class="mini-summary">
+            <strong>Takeaway:</strong> Multifocal CLs offer a solution for presbyopia, but success depends heavily on patient selection, managing expectations, and careful fitting to balance distance and near vision. Adaptation is key.
+        </div>
+        <details class="self-check-detailed">
+            <summary class="self-check-summary-detailed">Self-Check: A patient trying a center-near aspheric multifocal soft lens complains of good near vision but slightly blurry distance vision, especially in bright light. What might be happening related to pupil size?</summary>
+            <p>In bright light, the pupil constricts. With a <span class="keywords"><span>center-near</span></span> design, a smaller pupil might primarily be looking through the central near portion of the lens, or a larger proportion of near/intermediate optics, thus reducing the clarity of distance vision. The ECP might consider a center-distance design, a different Add power, or adjusting the overall distance power.</p>
+        </details>
+        <div class="confidence-rating">
+            <label for="step33_conf_detailed">Confidence:</label>
+            <select id="step33_conf_detailed"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </div>
+    </div>
+
+    <!-- ... Continue for Steps 34 through 40 using the same detailed structure ... -->
+
+</div> <!-- End Main Container -->
+
+</body>
+</html>
